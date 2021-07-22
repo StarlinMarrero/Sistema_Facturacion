@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Sistema_Facturacion
+namespace Sistema_Facturacion.Presentacion
 {
-    public partial class Form1 : Form
+    public partial class Frm_Inicio : Form
     {
-        public Form1()
+        public Frm_Inicio()
         {
             InitializeComponent();
         }

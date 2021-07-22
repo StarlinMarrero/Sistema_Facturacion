@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4ea3acb2d8a546b5b7d466a6b3212f17" Name="Diagram1">
+        <EntityTypeShape EntityType="SistemaFacturacionModel.Cliente" Width="1.5" PointX="3.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaFacturacionModel.Compra" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaFacturacionModel.ComprobantePago" Width="1.5" PointX="11.25" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaFacturacionModel.ComprobantePagoEntrada" Width="1.5" PointX="8.25" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaFacturacionModel.Detalle" Width="1.5" PointX="8.25" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaFacturacionModel.DetalleCompra" Width="1.5" PointX="5.25" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaFacturacionModel.Factura" Width="1.5" PointX="6" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaFacturacionModel.Producto" Width="1.5" PointX="3" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaFacturacionModel.Proveedor" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaFacturacionModel.sysdiagram" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaFacturacionModel.TipoComprobanteCompra" Width="1.5" PointX="6" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaFacturacionModel.TipoComprobantePago" Width="1.5" PointX="6" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaFacturacionModel.Usuario" Width="1.5" PointX="3" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaFacturacionModel.Vendedor" Width="1.5" PointX="0.75" PointY="7.875" IsExpanded="true" />
+        <AssociationConnector Association="SistemaFacturacionModel.FK__Facturas__IdClie__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaFacturacionModel.FK_Compra_Proveedor" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaFacturacionModel.FK_Compra_Vendedor" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaFacturacionModel.FK_ComprobantePagoEntradas_Compra" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaFacturacionModel.FK_DetalleCompra_Compra" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaFacturacionModel.FK_ComprobantePago_Facturas" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaFacturacionModel.FK_ComprobantePago_TipoComprobantePago" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaFacturacionModel.FK_ComprobantePagoEntradas_TipoComprobanteCompra" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaFacturacionModel.FK_ComprobantePagoEntradas_TipoComprobantePago" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaFacturacionModel.FK__Detalle__IdProdu__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaFacturacionModel.FK__Detalle__num_fac__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaFacturacionModel.FK_DetalleCompra_Producto" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaFacturacionModel.FK__Facturas__IdVend__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaFacturacionModel.FK_Usuarios_Vendedor" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

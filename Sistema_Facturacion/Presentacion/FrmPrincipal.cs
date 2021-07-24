@@ -21,7 +21,7 @@ namespace Sistema_Facturacion.Presentacion
 
         private void Btn_Productos_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(new Frm_Inicio());
+            AbrirFormulario(new Frm_Productos());
         }
         private Form formActivado = null;
         private void AbrirFormulario(Form FormHijo)
@@ -45,6 +45,49 @@ namespace Sistema_Facturacion.Presentacion
         private void Wrapper_Load(object sender, EventArgs e)
         {
             AbrirFormulario(new Frm_Inicio());
+        }
+
+        private void Frm_Principal_Closing(object sender, FormClosingEventArgs e)
+        {
+           
+
+
+            if (MessageBox.Show("Está seguro de Cerrar aplicación?", "Atención",
+               MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+               == System.Windows.Forms.DialogResult.Yes)
+            {
+                System.Environment.Exit(0);
+                Application.Exit();
+            }
+            else
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void Btn_Ventas_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Lb_Nombre_Negocio_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Inicio_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new Frm_Inicio());
+        }
+
+        private void Btn_Clientes_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new Frm_Clientes());
         }
     }
 }

@@ -144,6 +144,7 @@ namespace Sistema_Facturacion.Presentacion
             // 
             this.TBox_Pass.Location = new System.Drawing.Point(12, 212);
             this.TBox_Pass.Name = "TBox_Pass";
+            this.TBox_Pass.PasswordChar = '*';
             this.TBox_Pass.Size = new System.Drawing.Size(260, 20);
             this.TBox_Pass.TabIndex = 2;
             // 
@@ -151,6 +152,7 @@ namespace Sistema_Facturacion.Presentacion
             // 
             this.Lb_User.AllowParentOverrides = false;
             this.Lb_User.AutoEllipsis = false;
+            this.Lb_User.Cursor = System.Windows.Forms.Cursors.Default;
             this.Lb_User.CursorType = System.Windows.Forms.Cursors.Default;
             this.Lb_User.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Lb_User.Location = new System.Drawing.Point(12, 135);

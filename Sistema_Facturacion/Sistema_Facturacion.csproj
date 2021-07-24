@@ -241,11 +241,41 @@
     <Compile Include="Presentacion\FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\Frm_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Frm_Clientes.Designer.cs">
+      <DependentUpon>Frm_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Frm_Editar_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Frm_Editar_Cliente.Designer.cs">
+      <DependentUpon>Frm_Editar_Cliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\Frm_Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentacion\Frm_Inicio.Designer.cs">
       <DependentUpon>Frm_Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Frm_Nuevo_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Frm_Nuevo_Cliente.Designer.cs">
+      <DependentUpon>Frm_Nuevo_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Frm_Nuevo_Producto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Frm_Nuevo_Producto.Designer.cs">
+      <DependentUpon>Frm_Nuevo_Producto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Frm_Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Frm_Productos.Designer.cs">
+      <DependentUpon>Frm_Productos.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Login.cs">
       <SubType>Form</SubType>
@@ -261,8 +291,23 @@
     <EmbeddedResource Include="Presentacion\FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Frm_Clientes.resx">
+      <DependentUpon>Frm_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Frm_Editar_Cliente.resx">
+      <DependentUpon>Frm_Editar_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Frm_Inicio.resx">
       <DependentUpon>Frm_Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Frm_Nuevo_Cliente.resx">
+      <DependentUpon>Frm_Nuevo_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Frm_Nuevo_Producto.resx">
+      <DependentUpon>Frm_Nuevo_Producto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Frm_Productos.resx">
+      <DependentUpon>Frm_Productos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -276,6 +321,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EntityDeploy Include="Modelos\Db_Models.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -325,6 +371,19 @@
       <DependentUpon>Db_Models.edmx</DependentUpon>
       <LastGenOutput>Db_Models.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\icons8-shopping-cart-96.png" />
+    <None Include="Resources\icons8-users-96.png" />
+    <None Include="Resources\icons8-add-user-male-48.png" />
+    <None Include="Resources\icons8-cancel-96.png" />
+    <None Include="Resources\icons8-save-96.png" />
+    <None Include="Resources\icons8-update-left-rotation-48.png" />
+    <None Include="Resources\icons8-edit-32.png" />
+    <None Include="Resources\icons8-delete-bin-32.png" />
+    <None Include="Resources\icons8-delete-bin-48.png" />
+    <None Include="Resources\icons8-edit-96.png" />
+    <None Include="Resources\icons8-plus-96.png" />
+    <None Include="Resources\icons8-money-circulation-96.png" />
+    <None Include="Resources\icons8-open-box-96.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

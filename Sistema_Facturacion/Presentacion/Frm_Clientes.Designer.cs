@@ -29,6 +29,14 @@ namespace Sistema_Facturacion.Presentacion
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Clientes));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
@@ -36,14 +44,6 @@ namespace Sistema_Facturacion.Presentacion
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.TablaClientes = new System.Windows.Forms.DataGridView();
-            this.IdCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NombreCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ApellidoCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DNICliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RUCCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TelefonoCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DireccionCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox_buscar_cliente = new System.Windows.Forms.TextBox();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
@@ -52,6 +52,14 @@ namespace Sistema_Facturacion.Presentacion
             this.Panel_Card_Factura = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.Label_Cant_Facturas = new Bunifu.UI.WinForms.BunifuLabel();
+            this.IdCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ApellidoCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DNICliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RUCCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TelefonoCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DireccionCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Btn_Actualizar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -117,6 +125,8 @@ namespace Sistema_Facturacion.Presentacion
             // 
             this.TablaClientes.AllowUserToAddRows = false;
             this.TablaClientes.AllowUserToDeleteRows = false;
+            this.TablaClientes.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.TablaClientes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TablaClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.TablaClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdCliente,
@@ -127,6 +137,7 @@ namespace Sistema_Facturacion.Presentacion
             this.TelefonoCliente,
             this.DireccionCliente,
             this.Column1});
+            this.TablaClientes.GridColor = System.Drawing.SystemColors.ControlDarkDark;
             this.TablaClientes.Location = new System.Drawing.Point(0, 256);
             this.TablaClientes.MultiSelect = false;
             this.TablaClientes.Name = "TablaClientes";
@@ -136,78 +147,6 @@ namespace Sistema_Facturacion.Presentacion
             this.TablaClientes.TabIndex = 3;
             this.TablaClientes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TablaClientes_CellClick);
             this.TablaClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataClientes_CellContentClick);
-            // 
-            // IdCliente
-            // 
-            this.IdCliente.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.IdCliente.DataPropertyName = "IdCliente";
-            this.IdCliente.FillWeight = 53.29949F;
-            this.IdCliente.HeaderText = "Código";
-            this.IdCliente.Name = "IdCliente";
-            this.IdCliente.ReadOnly = true;
-            // 
-            // NombreCliente
-            // 
-            this.NombreCliente.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.NombreCliente.DataPropertyName = "NombreCliente";
-            this.NombreCliente.FillWeight = 128.8892F;
-            this.NombreCliente.HeaderText = "Nombres";
-            this.NombreCliente.Name = "NombreCliente";
-            this.NombreCliente.ReadOnly = true;
-            // 
-            // ApellidoCliente
-            // 
-            this.ApellidoCliente.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ApellidoCliente.DataPropertyName = "ApellidoCliente";
-            this.ApellidoCliente.FillWeight = 137.5038F;
-            this.ApellidoCliente.HeaderText = "Apellidos";
-            this.ApellidoCliente.Name = "ApellidoCliente";
-            this.ApellidoCliente.ReadOnly = true;
-            // 
-            // DNICliente
-            // 
-            this.DNICliente.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.DNICliente.DataPropertyName = "DNICliente";
-            this.DNICliente.FillWeight = 95.07687F;
-            this.DNICliente.HeaderText = "DNI";
-            this.DNICliente.Name = "DNICliente";
-            this.DNICliente.ReadOnly = true;
-            // 
-            // RUCCliente
-            // 
-            this.RUCCliente.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.RUCCliente.DataPropertyName = "RUCCliente";
-            this.RUCCliente.FillWeight = 95.07687F;
-            this.RUCCliente.HeaderText = "RUC";
-            this.RUCCliente.Name = "RUCCliente";
-            this.RUCCliente.ReadOnly = true;
-            // 
-            // TelefonoCliente
-            // 
-            this.TelefonoCliente.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TelefonoCliente.DataPropertyName = "TelefonoCliente";
-            this.TelefonoCliente.FillWeight = 95.07687F;
-            this.TelefonoCliente.HeaderText = "Teléfono";
-            this.TelefonoCliente.Name = "TelefonoCliente";
-            this.TelefonoCliente.ReadOnly = true;
-            // 
-            // DireccionCliente
-            // 
-            this.DireccionCliente.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.DireccionCliente.DataPropertyName = "DireccionCliente";
-            this.DireccionCliente.FillWeight = 95.07687F;
-            this.DireccionCliente.HeaderText = "Dirección";
-            this.DireccionCliente.Name = "DireccionCliente";
-            this.DireccionCliente.ReadOnly = true;
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column1.DataPropertyName = "EstadoCliente";
-            this.Column1.HeaderText = "Estado";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Visible = false;
             // 
             // textBox_buscar_cliente
             // 
@@ -349,6 +288,104 @@ namespace Sistema_Facturacion.Presentacion
             this.Label_Cant_Facturas.Text = "10";
             this.Label_Cant_Facturas.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.Label_Cant_Facturas.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // IdCliente
+            // 
+            this.IdCliente.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.IdCliente.DataPropertyName = "IdCliente";
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DeepSkyBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.IdCliente.DefaultCellStyle = dataGridViewCellStyle1;
+            this.IdCliente.FillWeight = 53.29949F;
+            this.IdCliente.HeaderText = "Código";
+            this.IdCliente.Name = "IdCliente";
+            this.IdCliente.ReadOnly = true;
+            // 
+            // NombreCliente
+            // 
+            this.NombreCliente.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.NombreCliente.DataPropertyName = "NombreCliente";
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.NombreCliente.DefaultCellStyle = dataGridViewCellStyle2;
+            this.NombreCliente.FillWeight = 128.8892F;
+            this.NombreCliente.HeaderText = "Nombres";
+            this.NombreCliente.Name = "NombreCliente";
+            this.NombreCliente.ReadOnly = true;
+            // 
+            // ApellidoCliente
+            // 
+            this.ApellidoCliente.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ApellidoCliente.DataPropertyName = "ApellidoCliente";
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ApellidoCliente.DefaultCellStyle = dataGridViewCellStyle3;
+            this.ApellidoCliente.FillWeight = 137.5038F;
+            this.ApellidoCliente.HeaderText = "Apellidos";
+            this.ApellidoCliente.Name = "ApellidoCliente";
+            this.ApellidoCliente.ReadOnly = true;
+            // 
+            // DNICliente
+            // 
+            this.DNICliente.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.DNICliente.DataPropertyName = "DNICliente";
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DNICliente.DefaultCellStyle = dataGridViewCellStyle4;
+            this.DNICliente.FillWeight = 95.07687F;
+            this.DNICliente.HeaderText = "DNI";
+            this.DNICliente.Name = "DNICliente";
+            this.DNICliente.ReadOnly = true;
+            // 
+            // RUCCliente
+            // 
+            this.RUCCliente.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.RUCCliente.DataPropertyName = "RUCCliente";
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.RUCCliente.DefaultCellStyle = dataGridViewCellStyle5;
+            this.RUCCliente.FillWeight = 95.07687F;
+            this.RUCCliente.HeaderText = "RUC";
+            this.RUCCliente.Name = "RUCCliente";
+            this.RUCCliente.ReadOnly = true;
+            // 
+            // TelefonoCliente
+            // 
+            this.TelefonoCliente.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TelefonoCliente.DataPropertyName = "TelefonoCliente";
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TelefonoCliente.DefaultCellStyle = dataGridViewCellStyle6;
+            this.TelefonoCliente.FillWeight = 95.07687F;
+            this.TelefonoCliente.HeaderText = "Teléfono";
+            this.TelefonoCliente.Name = "TelefonoCliente";
+            this.TelefonoCliente.ReadOnly = true;
+            // 
+            // DireccionCliente
+            // 
+            this.DireccionCliente.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.DireccionCliente.DataPropertyName = "DireccionCliente";
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DireccionCliente.DefaultCellStyle = dataGridViewCellStyle7;
+            this.DireccionCliente.FillWeight = 95.07687F;
+            this.DireccionCliente.HeaderText = "Dirección";
+            this.DireccionCliente.Name = "DireccionCliente";
+            this.DireccionCliente.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column1.DataPropertyName = "EstadoCliente";
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle8;
+            this.Column1.HeaderText = "Estado";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Visible = false;
             // 
             // Btn_Actualizar
             // 
@@ -642,14 +679,6 @@ namespace Sistema_Facturacion.Presentacion
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridView TablaClientes;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdCliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NombreCliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ApellidoCliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DNICliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RUCCliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TelefonoCliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DireccionCliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private System.Windows.Forms.TextBox textBox_buscar_cliente;
         private Bunifu.Framework.UI.BunifuTileButton Btn_Registrar_Cliente;
@@ -665,5 +694,13 @@ namespace Sistema_Facturacion.Presentacion
         private Bunifu.UI.WinForms.BunifuLabel Label_Cant_Facturas;
         private System.Windows.Forms.PictureBox pictureBox2;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton Btn_Actualizar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdCliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreCliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ApellidoCliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DNICliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RUCCliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TelefonoCliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DireccionCliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     }
 }

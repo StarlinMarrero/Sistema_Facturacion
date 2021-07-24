@@ -36,16 +36,16 @@ namespace Sistema_Facturacion.Presentacion
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.SideBarLeft = new System.Windows.Forms.Panel();
-            this.Lb_Nombre_Negocio = new Bunifu.UI.WinForms.BunifuLabel();
-            this.Lb_Nombre_Usuario = new Bunifu.UI.WinForms.BunifuLabel();
-            this.Wrapper = new System.Windows.Forms.Panel();
             this.Btn_Inicio = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.Lb_Nombre_Negocio = new Bunifu.UI.WinForms.BunifuLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Lb_Nombre_Usuario = new Bunifu.UI.WinForms.BunifuLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Btn_Ventas = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.Btn_Proveedores = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.Btn_Clientes = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.Btn_Productos = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.Wrapper = new System.Windows.Forms.Panel();
             this.SideBarLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -68,50 +68,6 @@ namespace Sistema_Facturacion.Presentacion
             this.SideBarLeft.Name = "SideBarLeft";
             this.SideBarLeft.Size = new System.Drawing.Size(180, 686);
             this.SideBarLeft.TabIndex = 0;
-            // 
-            // Lb_Nombre_Negocio
-            // 
-            this.Lb_Nombre_Negocio.AllowParentOverrides = false;
-            this.Lb_Nombre_Negocio.AutoEllipsis = false;
-            this.Lb_Nombre_Negocio.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Lb_Nombre_Negocio.CursorType = System.Windows.Forms.Cursors.Default;
-            this.Lb_Nombre_Negocio.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
-            this.Lb_Nombre_Negocio.ForeColor = System.Drawing.SystemColors.Control;
-            this.Lb_Nombre_Negocio.Location = new System.Drawing.Point(61, 18);
-            this.Lb_Nombre_Negocio.Name = "Lb_Nombre_Negocio";
-            this.Lb_Nombre_Negocio.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Lb_Nombre_Negocio.Size = new System.Drawing.Size(104, 25);
-            this.Lb_Nombre_Negocio.TabIndex = 8;
-            this.Lb_Nombre_Negocio.Text = "Facturación";
-            this.Lb_Nombre_Negocio.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.Lb_Nombre_Negocio.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.Lb_Nombre_Negocio.Click += new System.EventHandler(this.Lb_Nombre_Negocio_Click);
-            // 
-            // Lb_Nombre_Usuario
-            // 
-            this.Lb_Nombre_Usuario.AllowParentOverrides = false;
-            this.Lb_Nombre_Usuario.AutoEllipsis = false;
-            this.Lb_Nombre_Usuario.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Lb_Nombre_Usuario.CursorType = System.Windows.Forms.Cursors.Default;
-            this.Lb_Nombre_Usuario.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Lb_Nombre_Usuario.ForeColor = System.Drawing.SystemColors.Control;
-            this.Lb_Nombre_Usuario.Location = new System.Drawing.Point(46, 196);
-            this.Lb_Nombre_Usuario.Name = "Lb_Nombre_Usuario";
-            this.Lb_Nombre_Usuario.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Lb_Nombre_Usuario.Size = new System.Drawing.Size(89, 15);
-            this.Lb_Nombre_Usuario.TabIndex = 5;
-            this.Lb_Nombre_Usuario.Text = "Nombre_Usuario";
-            this.Lb_Nombre_Usuario.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.Lb_Nombre_Usuario.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.Lb_Nombre_Usuario.Click += new System.EventHandler(this.bunifuLabel1_Click);
-            // 
-            // Wrapper
-            // 
-            this.Wrapper.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Wrapper.Location = new System.Drawing.Point(180, 0);
-            this.Wrapper.Name = "Wrapper";
-            this.Wrapper.Size = new System.Drawing.Size(911, 686);
-            this.Wrapper.TabIndex = 1;
             // 
             // Btn_Inicio
             // 
@@ -203,6 +159,24 @@ namespace Sistema_Facturacion.Presentacion
             this.Btn_Inicio.UseDefaultRadiusAndThickness = true;
             this.Btn_Inicio.Click += new System.EventHandler(this.Btn_Inicio_Click);
             // 
+            // Lb_Nombre_Negocio
+            // 
+            this.Lb_Nombre_Negocio.AllowParentOverrides = false;
+            this.Lb_Nombre_Negocio.AutoEllipsis = false;
+            this.Lb_Nombre_Negocio.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Lb_Nombre_Negocio.CursorType = System.Windows.Forms.Cursors.Default;
+            this.Lb_Nombre_Negocio.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
+            this.Lb_Nombre_Negocio.ForeColor = System.Drawing.SystemColors.Control;
+            this.Lb_Nombre_Negocio.Location = new System.Drawing.Point(61, 18);
+            this.Lb_Nombre_Negocio.Name = "Lb_Nombre_Negocio";
+            this.Lb_Nombre_Negocio.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Lb_Nombre_Negocio.Size = new System.Drawing.Size(104, 25);
+            this.Lb_Nombre_Negocio.TabIndex = 8;
+            this.Lb_Nombre_Negocio.Text = "Facturación";
+            this.Lb_Nombre_Negocio.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.Lb_Nombre_Negocio.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.Lb_Nombre_Negocio.Click += new System.EventHandler(this.Lb_Nombre_Negocio_Click);
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
@@ -212,6 +186,24 @@ namespace Sistema_Facturacion.Presentacion
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
+            // 
+            // Lb_Nombre_Usuario
+            // 
+            this.Lb_Nombre_Usuario.AllowParentOverrides = false;
+            this.Lb_Nombre_Usuario.AutoEllipsis = false;
+            this.Lb_Nombre_Usuario.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Lb_Nombre_Usuario.CursorType = System.Windows.Forms.Cursors.Default;
+            this.Lb_Nombre_Usuario.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Lb_Nombre_Usuario.ForeColor = System.Drawing.SystemColors.Control;
+            this.Lb_Nombre_Usuario.Location = new System.Drawing.Point(46, 196);
+            this.Lb_Nombre_Usuario.Name = "Lb_Nombre_Usuario";
+            this.Lb_Nombre_Usuario.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Lb_Nombre_Usuario.Size = new System.Drawing.Size(89, 15);
+            this.Lb_Nombre_Usuario.TabIndex = 5;
+            this.Lb_Nombre_Usuario.Text = "Nombre_Usuario";
+            this.Lb_Nombre_Usuario.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.Lb_Nombre_Usuario.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.Lb_Nombre_Usuario.Click += new System.EventHandler(this.bunifuLabel1_Click);
             // 
             // pictureBox1
             // 
@@ -400,6 +392,7 @@ namespace Sistema_Facturacion.Presentacion
             this.Btn_Proveedores.TextMarginLeft = 0;
             this.Btn_Proveedores.TextPadding = new System.Windows.Forms.Padding(0);
             this.Btn_Proveedores.UseDefaultRadiusAndThickness = true;
+            this.Btn_Proveedores.Click += new System.EventHandler(this.Btn_Proveedores_Click);
             // 
             // Btn_Clientes
             // 
@@ -580,6 +573,14 @@ namespace Sistema_Facturacion.Presentacion
             this.Btn_Productos.TextPadding = new System.Windows.Forms.Padding(0);
             this.Btn_Productos.UseDefaultRadiusAndThickness = true;
             this.Btn_Productos.Click += new System.EventHandler(this.Btn_Productos_Click);
+            // 
+            // Wrapper
+            // 
+            this.Wrapper.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Wrapper.Location = new System.Drawing.Point(180, 0);
+            this.Wrapper.Name = "Wrapper";
+            this.Wrapper.Size = new System.Drawing.Size(911, 686);
+            this.Wrapper.TabIndex = 1;
             // 
             // FrmPrincipal
             // 

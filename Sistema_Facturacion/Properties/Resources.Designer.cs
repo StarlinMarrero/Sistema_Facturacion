@@ -73,6 +73,16 @@ namespace Sistema_Facturacion.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_buy_for_change_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-buy-for-change-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_cancel_96 {
             get {
                 object obj = ResourceManager.GetObject("icons8-cancel-96", resourceCulture);
@@ -186,6 +196,16 @@ namespace Sistema_Facturacion.Properties {
         internal static System.Drawing.Bitmap icons8_users_96 {
             get {
                 object obj = ResourceManager.GetObject("icons8-users-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap new_contact_48 {
+            get {
+                object obj = ResourceManager.GetObject("new-contact-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -89,5 +89,10 @@ namespace Sistema_Facturacion.Presentacion
         {
             AbrirFormulario(new Frm_Clientes());
         }
+
+        private void Btn_Proveedores_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new Frm_Proveedores());
+        }
     }
 }

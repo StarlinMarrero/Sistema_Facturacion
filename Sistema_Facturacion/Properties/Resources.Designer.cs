@@ -133,6 +133,16 @@ namespace Sistema_Facturacion.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_graduate_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-graduate-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_money_circulation_96 {
             get {
                 object obj = ResourceManager.GetObject("icons8-money-circulation-96", resourceCulture);
@@ -176,6 +186,16 @@ namespace Sistema_Facturacion.Properties {
         internal static System.Drawing.Bitmap icons8_shopping_cart_96 {
             get {
                 object obj = ResourceManager.GetObject("icons8-shopping-cart-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_student_male_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-student-male-96", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

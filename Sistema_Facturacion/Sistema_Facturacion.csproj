@@ -380,6 +380,8 @@
       <DependentUpon>Db_Models.edmx</DependentUpon>
       <LastGenOutput>Db_Models.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\icons8-graduate-96.png" />
+    <None Include="Resources\icons8-student-male-96.png" />
     <None Include="Resources\icons8-buy-for-change-48.png" />
     <None Include="Resources\new-contact-48.png" />
     <None Include="Resources\icons8-shopping-cart-96.png" />

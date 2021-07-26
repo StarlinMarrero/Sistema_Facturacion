@@ -253,6 +253,12 @@
     <Compile Include="Presentacion\Frm_Editar_Cliente.Designer.cs">
       <DependentUpon>Frm_Editar_Cliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\Frm_Editar_Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Frm_Editar_Proveedor.Designer.cs">
+      <DependentUpon>Frm_Editar_Proveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\Frm_Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -270,6 +276,12 @@
     </Compile>
     <Compile Include="Presentacion\Frm_Nuevo_Producto.Designer.cs">
       <DependentUpon>Frm_Nuevo_Producto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Frm_Nuevo_Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Frm_Nuevo_Proveedor.Designer.cs">
+      <DependentUpon>Frm_Nuevo_Proveedor.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Frm_Productos.cs">
       <SubType>Form</SubType>
@@ -303,6 +315,9 @@
     <EmbeddedResource Include="Presentacion\Frm_Editar_Cliente.resx">
       <DependentUpon>Frm_Editar_Cliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Frm_Editar_Proveedor.resx">
+      <DependentUpon>Frm_Editar_Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Frm_Inicio.resx">
       <DependentUpon>Frm_Inicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -311,6 +326,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Frm_Nuevo_Producto.resx">
       <DependentUpon>Frm_Nuevo_Producto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Frm_Nuevo_Proveedor.resx">
+      <DependentUpon>Frm_Nuevo_Proveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Frm_Productos.resx">
       <DependentUpon>Frm_Productos.cs</DependentUpon>

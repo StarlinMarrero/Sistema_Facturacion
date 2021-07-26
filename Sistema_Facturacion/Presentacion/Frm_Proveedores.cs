@@ -26,7 +26,7 @@ namespace Sistema_Facturacion.Presentacion
         }
         public void Cargar_Proveedores()
         {
-            var lista = db.Proveedors.ToList();
+            var lista = db.Proveedors.Where(e => e.EstadoProveedor == true).ToList();
             TablaProveedor.DataSource = lista;
             TablaProveedor.Columns[7].Visible = false;
             Label_Cantidad_Proveedor.Text = lista.Count().ToString();
@@ -82,6 +82,42 @@ namespace Sistema_Facturacion.Presentacion
         private void Btn_Actualizar_Click(object sender, EventArgs e)
         {
             Cargar_Proveedores();
+        }
+
+        private void Btn_Editar_Click(object sender, EventArgs e)
+        {
+            var NumeroDeFilaSeleccionada = TablaProveedor.CurrentRow.Index;
+            DataGridViewRow row = this.TablaProveedor.Rows[NumeroDeFilaSeleccionada];
+            var Id_Proveedor = Convert.ToInt32(row.Cells["idProveedor"].Value.ToString());
+
+            Frm_Editar_Proveedor frm_Editar_Proveedor = new Frm_Editar_Proveedor();
+            frm_Editar_Proveedor.Obtener_Proveedor(Id_Proveedor);
+         
+        }
+
+        private void Btn_Registrar_Click(object sender, EventArgs e)
+        {
+            Frm_Nuevo_Proveedor frm_Nuevo_Proveedor = new Frm_Nuevo_Proveedor();
+            frm_Nuevo_Proveedor.ShowDialog();
+        }
+
+        private void Btn_Eliminar_Click(object sender, EventArgs e)
+        {
+
+            if (MessageBox.Show("Está seguro de eliminar este Proveedor?", "Atención",
+              MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+              == System.Windows.Forms.DialogResult.Yes)
+            {
+                var NumeroDeFilaSeleccionada = TablaProveedor.CurrentRow.Index;
+                DataGridViewRow row = this.TablaProveedor.Rows[NumeroDeFilaSeleccionada];
+                var idProveedor = Convert.ToInt32(row.Cells["idProveedor"].Value.ToString());
+
+                var Proveedor = db.Proveedors.Find(idProveedor);
+                Proveedor.EstadoProveedor = false;
+                db.SaveChanges();
+                Cargar_Proveedores();
+                Alert_Message.confirmacionForm("Eliminar Proveedor", "Proveedor eliminado", "Info");
+            }
         }
     }
 }

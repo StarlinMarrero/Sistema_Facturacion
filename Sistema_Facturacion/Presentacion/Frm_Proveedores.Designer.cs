@@ -30,11 +30,15 @@ namespace Sistema_Facturacion.Presentacion
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Proveedores));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Panel_Wrapper = new Bunifu.UI.WinForms.BunifuPanel();
+            this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.Btn_Actualizar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.textBox_Buscar = new System.Windows.Forms.TextBox();
+            this.Btn_Buscar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.Panel_Card_Compras = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.Label_Compras = new Bunifu.UI.WinForms.BunifuLabel();
@@ -54,10 +58,6 @@ namespace Sistema_Facturacion.Presentacion
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.Label_Cantidad_Proveedor = new Bunifu.UI.WinForms.BunifuLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Btn_Buscar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.textBox_Buscar = new System.Windows.Forms.TextBox();
-            this.Btn_Actualizar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.panel2.SuspendLayout();
             this.Panel_Wrapper.SuspendLayout();
             this.Panel_Card_Compras.SuspendLayout();
@@ -118,6 +118,209 @@ namespace Sistema_Facturacion.Presentacion
             this.Panel_Wrapper.ShowBorders = true;
             this.Panel_Wrapper.Size = new System.Drawing.Size(879, 558);
             this.Panel_Wrapper.TabIndex = 34;
+            // 
+            // bunifuLabel4
+            // 
+            this.bunifuLabel4.AllowParentOverrides = false;
+            this.bunifuLabel4.AutoEllipsis = false;
+            this.bunifuLabel4.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel4.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuLabel4.Location = new System.Drawing.Point(13, 124);
+            this.bunifuLabel4.Name = "bunifuLabel4";
+            this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel4.Size = new System.Drawing.Size(92, 15);
+            this.bunifuLabel4.TabIndex = 40;
+            this.bunifuLabel4.Text = "Buscar Proveedor";
+            this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // Btn_Actualizar
+            // 
+            this.Btn_Actualizar.AllowAnimations = true;
+            this.Btn_Actualizar.AllowMouseEffects = true;
+            this.Btn_Actualizar.AllowToggling = false;
+            this.Btn_Actualizar.AnimationSpeed = 200;
+            this.Btn_Actualizar.AutoGenerateColors = false;
+            this.Btn_Actualizar.AutoRoundBorders = false;
+            this.Btn_Actualizar.AutoSizeLeftIcon = true;
+            this.Btn_Actualizar.AutoSizeRightIcon = true;
+            this.Btn_Actualizar.BackColor = System.Drawing.Color.Transparent;
+            this.Btn_Actualizar.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.Btn_Actualizar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Actualizar.BackgroundImage")));
+            this.Btn_Actualizar.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Btn_Actualizar.ButtonText = "Actualizar";
+            this.Btn_Actualizar.ButtonTextMarginLeft = 0;
+            this.Btn_Actualizar.ColorContrastOnClick = 45;
+            this.Btn_Actualizar.ColorContrastOnHover = 45;
+            this.Btn_Actualizar.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.Btn_Actualizar.CustomizableEdges = borderEdges3;
+            this.Btn_Actualizar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.Btn_Actualizar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.Btn_Actualizar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.Btn_Actualizar.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.Btn_Actualizar.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.Btn_Actualizar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Btn_Actualizar.ForeColor = System.Drawing.Color.White;
+            this.Btn_Actualizar.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btn_Actualizar.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.Btn_Actualizar.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.Btn_Actualizar.IconMarginLeft = 11;
+            this.Btn_Actualizar.IconPadding = 10;
+            this.Btn_Actualizar.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Btn_Actualizar.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.Btn_Actualizar.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.Btn_Actualizar.IconSize = 25;
+            this.Btn_Actualizar.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Actualizar.IdleBorderRadius = 1;
+            this.Btn_Actualizar.IdleBorderThickness = 1;
+            this.Btn_Actualizar.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Actualizar.IdleIconLeftImage = null;
+            this.Btn_Actualizar.IdleIconRightImage = null;
+            this.Btn_Actualizar.IndicateFocus = false;
+            this.Btn_Actualizar.Location = new System.Drawing.Point(357, 145);
+            this.Btn_Actualizar.Name = "Btn_Actualizar";
+            this.Btn_Actualizar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.Btn_Actualizar.OnDisabledState.BorderRadius = 1;
+            this.Btn_Actualizar.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Btn_Actualizar.OnDisabledState.BorderThickness = 1;
+            this.Btn_Actualizar.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.Btn_Actualizar.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.Btn_Actualizar.OnDisabledState.IconLeftImage = null;
+            this.Btn_Actualizar.OnDisabledState.IconRightImage = null;
+            this.Btn_Actualizar.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.Btn_Actualizar.onHoverState.BorderRadius = 1;
+            this.Btn_Actualizar.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Btn_Actualizar.onHoverState.BorderThickness = 1;
+            this.Btn_Actualizar.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.Btn_Actualizar.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.Btn_Actualizar.onHoverState.IconLeftImage = null;
+            this.Btn_Actualizar.onHoverState.IconRightImage = null;
+            this.Btn_Actualizar.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Actualizar.OnIdleState.BorderRadius = 1;
+            this.Btn_Actualizar.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Btn_Actualizar.OnIdleState.BorderThickness = 1;
+            this.Btn_Actualizar.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Actualizar.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.Btn_Actualizar.OnIdleState.IconLeftImage = null;
+            this.Btn_Actualizar.OnIdleState.IconRightImage = null;
+            this.Btn_Actualizar.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.Btn_Actualizar.OnPressedState.BorderRadius = 1;
+            this.Btn_Actualizar.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Btn_Actualizar.OnPressedState.BorderThickness = 1;
+            this.Btn_Actualizar.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.Btn_Actualizar.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.Btn_Actualizar.OnPressedState.IconLeftImage = null;
+            this.Btn_Actualizar.OnPressedState.IconRightImage = null;
+            this.Btn_Actualizar.Size = new System.Drawing.Size(106, 20);
+            this.Btn_Actualizar.TabIndex = 39;
+            this.Btn_Actualizar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Btn_Actualizar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Btn_Actualizar.TextMarginLeft = 0;
+            this.Btn_Actualizar.TextPadding = new System.Windows.Forms.Padding(0);
+            this.Btn_Actualizar.UseDefaultRadiusAndThickness = true;
+            this.Btn_Actualizar.Click += new System.EventHandler(this.Btn_Actualizar_Click);
+            // 
+            // textBox_Buscar
+            // 
+            this.textBox_Buscar.Location = new System.Drawing.Point(8, 145);
+            this.textBox_Buscar.Name = "textBox_Buscar";
+            this.textBox_Buscar.Size = new System.Drawing.Size(222, 20);
+            this.textBox_Buscar.TabIndex = 38;
+            // 
+            // Btn_Buscar
+            // 
+            this.Btn_Buscar.AllowAnimations = true;
+            this.Btn_Buscar.AllowMouseEffects = true;
+            this.Btn_Buscar.AllowToggling = false;
+            this.Btn_Buscar.AnimationSpeed = 200;
+            this.Btn_Buscar.AutoGenerateColors = false;
+            this.Btn_Buscar.AutoRoundBorders = false;
+            this.Btn_Buscar.AutoSizeLeftIcon = true;
+            this.Btn_Buscar.AutoSizeRightIcon = true;
+            this.Btn_Buscar.BackColor = System.Drawing.Color.Transparent;
+            this.Btn_Buscar.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.Btn_Buscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Buscar.BackgroundImage")));
+            this.Btn_Buscar.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Btn_Buscar.ButtonText = "Buscar";
+            this.Btn_Buscar.ButtonTextMarginLeft = 0;
+            this.Btn_Buscar.ColorContrastOnClick = 45;
+            this.Btn_Buscar.ColorContrastOnHover = 45;
+            this.Btn_Buscar.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.Btn_Buscar.CustomizableEdges = borderEdges4;
+            this.Btn_Buscar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.Btn_Buscar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.Btn_Buscar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.Btn_Buscar.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.Btn_Buscar.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.Btn_Buscar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Btn_Buscar.ForeColor = System.Drawing.Color.White;
+            this.Btn_Buscar.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btn_Buscar.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.Btn_Buscar.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.Btn_Buscar.IconMarginLeft = 11;
+            this.Btn_Buscar.IconPadding = 10;
+            this.Btn_Buscar.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Btn_Buscar.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.Btn_Buscar.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.Btn_Buscar.IconSize = 25;
+            this.Btn_Buscar.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Buscar.IdleBorderRadius = 1;
+            this.Btn_Buscar.IdleBorderThickness = 1;
+            this.Btn_Buscar.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Buscar.IdleIconLeftImage = null;
+            this.Btn_Buscar.IdleIconRightImage = null;
+            this.Btn_Buscar.IndicateFocus = false;
+            this.Btn_Buscar.Location = new System.Drawing.Point(242, 145);
+            this.Btn_Buscar.Name = "Btn_Buscar";
+            this.Btn_Buscar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.Btn_Buscar.OnDisabledState.BorderRadius = 1;
+            this.Btn_Buscar.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Btn_Buscar.OnDisabledState.BorderThickness = 1;
+            this.Btn_Buscar.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.Btn_Buscar.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.Btn_Buscar.OnDisabledState.IconLeftImage = null;
+            this.Btn_Buscar.OnDisabledState.IconRightImage = null;
+            this.Btn_Buscar.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.Btn_Buscar.onHoverState.BorderRadius = 1;
+            this.Btn_Buscar.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Btn_Buscar.onHoverState.BorderThickness = 1;
+            this.Btn_Buscar.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.Btn_Buscar.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.Btn_Buscar.onHoverState.IconLeftImage = null;
+            this.Btn_Buscar.onHoverState.IconRightImage = null;
+            this.Btn_Buscar.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Buscar.OnIdleState.BorderRadius = 1;
+            this.Btn_Buscar.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Btn_Buscar.OnIdleState.BorderThickness = 1;
+            this.Btn_Buscar.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Buscar.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.Btn_Buscar.OnIdleState.IconLeftImage = null;
+            this.Btn_Buscar.OnIdleState.IconRightImage = null;
+            this.Btn_Buscar.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.Btn_Buscar.OnPressedState.BorderRadius = 1;
+            this.Btn_Buscar.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Btn_Buscar.OnPressedState.BorderThickness = 1;
+            this.Btn_Buscar.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.Btn_Buscar.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.Btn_Buscar.OnPressedState.IconLeftImage = null;
+            this.Btn_Buscar.OnPressedState.IconRightImage = null;
+            this.Btn_Buscar.Size = new System.Drawing.Size(106, 20);
+            this.Btn_Buscar.TabIndex = 37;
+            this.Btn_Buscar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Btn_Buscar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Btn_Buscar.TextMarginLeft = 0;
+            this.Btn_Buscar.TextPadding = new System.Windows.Forms.Padding(0);
+            this.Btn_Buscar.UseDefaultRadiusAndThickness = true;
+            this.Btn_Buscar.Click += new System.EventHandler(this.Btn_Buscar_Click);
             // 
             // Panel_Card_Compras
             // 
@@ -206,6 +409,7 @@ namespace Sistema_Facturacion.Presentacion
             this.Btn_Eliminar.Name = "Btn_Eliminar";
             this.Btn_Eliminar.Size = new System.Drawing.Size(106, 112);
             this.Btn_Eliminar.TabIndex = 34;
+            this.Btn_Eliminar.Click += new System.EventHandler(this.Btn_Eliminar_Click);
             // 
             // Btn_Editar
             // 
@@ -225,6 +429,7 @@ namespace Sistema_Facturacion.Presentacion
             this.Btn_Editar.Name = "Btn_Editar";
             this.Btn_Editar.Size = new System.Drawing.Size(106, 112);
             this.Btn_Editar.TabIndex = 33;
+            this.Btn_Editar.Click += new System.EventHandler(this.Btn_Editar_Click);
             // 
             // Btn_Registrar
             // 
@@ -244,6 +449,7 @@ namespace Sistema_Facturacion.Presentacion
             this.Btn_Registrar.Name = "Btn_Registrar";
             this.Btn_Registrar.Size = new System.Drawing.Size(106, 112);
             this.Btn_Registrar.TabIndex = 32;
+            this.Btn_Registrar.Click += new System.EventHandler(this.Btn_Registrar_Click);
             // 
             // TablaProveedor
             // 
@@ -386,208 +592,6 @@ namespace Sistema_Facturacion.Presentacion
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // Btn_Buscar
-            // 
-            this.Btn_Buscar.AllowAnimations = true;
-            this.Btn_Buscar.AllowMouseEffects = true;
-            this.Btn_Buscar.AllowToggling = false;
-            this.Btn_Buscar.AnimationSpeed = 200;
-            this.Btn_Buscar.AutoGenerateColors = false;
-            this.Btn_Buscar.AutoRoundBorders = false;
-            this.Btn_Buscar.AutoSizeLeftIcon = true;
-            this.Btn_Buscar.AutoSizeRightIcon = true;
-            this.Btn_Buscar.BackColor = System.Drawing.Color.Transparent;
-            this.Btn_Buscar.BackColor1 = System.Drawing.Color.DodgerBlue;
-            this.Btn_Buscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Buscar.BackgroundImage")));
-            this.Btn_Buscar.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.Btn_Buscar.ButtonText = "Buscar";
-            this.Btn_Buscar.ButtonTextMarginLeft = 0;
-            this.Btn_Buscar.ColorContrastOnClick = 45;
-            this.Btn_Buscar.ColorContrastOnHover = 45;
-            this.Btn_Buscar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.Btn_Buscar.CustomizableEdges = borderEdges2;
-            this.Btn_Buscar.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.Btn_Buscar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.Btn_Buscar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.Btn_Buscar.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.Btn_Buscar.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.Btn_Buscar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Btn_Buscar.ForeColor = System.Drawing.Color.White;
-            this.Btn_Buscar.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn_Buscar.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.Btn_Buscar.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.Btn_Buscar.IconMarginLeft = 11;
-            this.Btn_Buscar.IconPadding = 10;
-            this.Btn_Buscar.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Btn_Buscar.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.Btn_Buscar.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.Btn_Buscar.IconSize = 25;
-            this.Btn_Buscar.IdleBorderColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Buscar.IdleBorderRadius = 1;
-            this.Btn_Buscar.IdleBorderThickness = 1;
-            this.Btn_Buscar.IdleFillColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Buscar.IdleIconLeftImage = null;
-            this.Btn_Buscar.IdleIconRightImage = null;
-            this.Btn_Buscar.IndicateFocus = false;
-            this.Btn_Buscar.Location = new System.Drawing.Point(242, 145);
-            this.Btn_Buscar.Name = "Btn_Buscar";
-            this.Btn_Buscar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.Btn_Buscar.OnDisabledState.BorderRadius = 1;
-            this.Btn_Buscar.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.Btn_Buscar.OnDisabledState.BorderThickness = 1;
-            this.Btn_Buscar.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.Btn_Buscar.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.Btn_Buscar.OnDisabledState.IconLeftImage = null;
-            this.Btn_Buscar.OnDisabledState.IconRightImage = null;
-            this.Btn_Buscar.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.Btn_Buscar.onHoverState.BorderRadius = 1;
-            this.Btn_Buscar.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.Btn_Buscar.onHoverState.BorderThickness = 1;
-            this.Btn_Buscar.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.Btn_Buscar.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.Btn_Buscar.onHoverState.IconLeftImage = null;
-            this.Btn_Buscar.onHoverState.IconRightImage = null;
-            this.Btn_Buscar.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Buscar.OnIdleState.BorderRadius = 1;
-            this.Btn_Buscar.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.Btn_Buscar.OnIdleState.BorderThickness = 1;
-            this.Btn_Buscar.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Buscar.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.Btn_Buscar.OnIdleState.IconLeftImage = null;
-            this.Btn_Buscar.OnIdleState.IconRightImage = null;
-            this.Btn_Buscar.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.Btn_Buscar.OnPressedState.BorderRadius = 1;
-            this.Btn_Buscar.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.Btn_Buscar.OnPressedState.BorderThickness = 1;
-            this.Btn_Buscar.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.Btn_Buscar.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.Btn_Buscar.OnPressedState.IconLeftImage = null;
-            this.Btn_Buscar.OnPressedState.IconRightImage = null;
-            this.Btn_Buscar.Size = new System.Drawing.Size(106, 20);
-            this.Btn_Buscar.TabIndex = 37;
-            this.Btn_Buscar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Btn_Buscar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.Btn_Buscar.TextMarginLeft = 0;
-            this.Btn_Buscar.TextPadding = new System.Windows.Forms.Padding(0);
-            this.Btn_Buscar.UseDefaultRadiusAndThickness = true;
-            this.Btn_Buscar.Click += new System.EventHandler(this.Btn_Buscar_Click);
-            // 
-            // textBox_Buscar
-            // 
-            this.textBox_Buscar.Location = new System.Drawing.Point(8, 145);
-            this.textBox_Buscar.Name = "textBox_Buscar";
-            this.textBox_Buscar.Size = new System.Drawing.Size(222, 20);
-            this.textBox_Buscar.TabIndex = 38;
-            // 
-            // Btn_Actualizar
-            // 
-            this.Btn_Actualizar.AllowAnimations = true;
-            this.Btn_Actualizar.AllowMouseEffects = true;
-            this.Btn_Actualizar.AllowToggling = false;
-            this.Btn_Actualizar.AnimationSpeed = 200;
-            this.Btn_Actualizar.AutoGenerateColors = false;
-            this.Btn_Actualizar.AutoRoundBorders = false;
-            this.Btn_Actualizar.AutoSizeLeftIcon = true;
-            this.Btn_Actualizar.AutoSizeRightIcon = true;
-            this.Btn_Actualizar.BackColor = System.Drawing.Color.Transparent;
-            this.Btn_Actualizar.BackColor1 = System.Drawing.Color.DodgerBlue;
-            this.Btn_Actualizar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Actualizar.BackgroundImage")));
-            this.Btn_Actualizar.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.Btn_Actualizar.ButtonText = "Actualizar";
-            this.Btn_Actualizar.ButtonTextMarginLeft = 0;
-            this.Btn_Actualizar.ColorContrastOnClick = 45;
-            this.Btn_Actualizar.ColorContrastOnHover = 45;
-            this.Btn_Actualizar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.Btn_Actualizar.CustomizableEdges = borderEdges1;
-            this.Btn_Actualizar.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.Btn_Actualizar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.Btn_Actualizar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.Btn_Actualizar.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.Btn_Actualizar.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.Btn_Actualizar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Btn_Actualizar.ForeColor = System.Drawing.Color.White;
-            this.Btn_Actualizar.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn_Actualizar.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.Btn_Actualizar.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.Btn_Actualizar.IconMarginLeft = 11;
-            this.Btn_Actualizar.IconPadding = 10;
-            this.Btn_Actualizar.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Btn_Actualizar.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.Btn_Actualizar.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.Btn_Actualizar.IconSize = 25;
-            this.Btn_Actualizar.IdleBorderColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Actualizar.IdleBorderRadius = 1;
-            this.Btn_Actualizar.IdleBorderThickness = 1;
-            this.Btn_Actualizar.IdleFillColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Actualizar.IdleIconLeftImage = null;
-            this.Btn_Actualizar.IdleIconRightImage = null;
-            this.Btn_Actualizar.IndicateFocus = false;
-            this.Btn_Actualizar.Location = new System.Drawing.Point(357, 145);
-            this.Btn_Actualizar.Name = "Btn_Actualizar";
-            this.Btn_Actualizar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.Btn_Actualizar.OnDisabledState.BorderRadius = 1;
-            this.Btn_Actualizar.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.Btn_Actualizar.OnDisabledState.BorderThickness = 1;
-            this.Btn_Actualizar.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.Btn_Actualizar.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.Btn_Actualizar.OnDisabledState.IconLeftImage = null;
-            this.Btn_Actualizar.OnDisabledState.IconRightImage = null;
-            this.Btn_Actualizar.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.Btn_Actualizar.onHoverState.BorderRadius = 1;
-            this.Btn_Actualizar.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.Btn_Actualizar.onHoverState.BorderThickness = 1;
-            this.Btn_Actualizar.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.Btn_Actualizar.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.Btn_Actualizar.onHoverState.IconLeftImage = null;
-            this.Btn_Actualizar.onHoverState.IconRightImage = null;
-            this.Btn_Actualizar.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Actualizar.OnIdleState.BorderRadius = 1;
-            this.Btn_Actualizar.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.Btn_Actualizar.OnIdleState.BorderThickness = 1;
-            this.Btn_Actualizar.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Actualizar.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.Btn_Actualizar.OnIdleState.IconLeftImage = null;
-            this.Btn_Actualizar.OnIdleState.IconRightImage = null;
-            this.Btn_Actualizar.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.Btn_Actualizar.OnPressedState.BorderRadius = 1;
-            this.Btn_Actualizar.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.Btn_Actualizar.OnPressedState.BorderThickness = 1;
-            this.Btn_Actualizar.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.Btn_Actualizar.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.Btn_Actualizar.OnPressedState.IconLeftImage = null;
-            this.Btn_Actualizar.OnPressedState.IconRightImage = null;
-            this.Btn_Actualizar.Size = new System.Drawing.Size(106, 20);
-            this.Btn_Actualizar.TabIndex = 39;
-            this.Btn_Actualizar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Btn_Actualizar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.Btn_Actualizar.TextMarginLeft = 0;
-            this.Btn_Actualizar.TextPadding = new System.Windows.Forms.Padding(0);
-            this.Btn_Actualizar.UseDefaultRadiusAndThickness = true;
-            this.Btn_Actualizar.Click += new System.EventHandler(this.Btn_Actualizar_Click);
-            // 
-            // bunifuLabel4
-            // 
-            this.bunifuLabel4.AllowParentOverrides = false;
-            this.bunifuLabel4.AutoEllipsis = false;
-            this.bunifuLabel4.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel4.Location = new System.Drawing.Point(13, 124);
-            this.bunifuLabel4.Name = "bunifuLabel4";
-            this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(92, 15);
-            this.bunifuLabel4.TabIndex = 40;
-            this.bunifuLabel4.Text = "Buscar Proveedor";
-            this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // Frm_Proveedores
             // 

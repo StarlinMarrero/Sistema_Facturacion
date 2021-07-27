@@ -14,9 +14,11 @@ namespace Sistema_Facturacion.Presentacion
     {
         public FrmPrincipal()
         {
+           
             InitializeComponent();
         }
 
+       
     
 
         private void Btn_Productos_Click(object sender, EventArgs e)
@@ -45,6 +47,7 @@ namespace Sistema_Facturacion.Presentacion
         private void Wrapper_Load(object sender, EventArgs e)
         {
             AbrirFormulario(new Frm_Inicio());
+         
         }
 
         private void Frm_Principal_Closing(object sender, FormClosingEventArgs e)
@@ -67,7 +70,7 @@ namespace Sistema_Facturacion.Presentacion
 
         private void Btn_Ventas_Click(object sender, EventArgs e)
         {
-
+            AbrirFormulario(new Frm_Ventas());
         }
 
         private void bunifuLabel1_Click(object sender, EventArgs e)

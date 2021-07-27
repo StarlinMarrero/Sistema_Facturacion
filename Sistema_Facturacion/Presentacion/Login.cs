@@ -51,6 +51,8 @@ namespace Sistema_Facturacion.Presentacion
                 this.Hide();
                 FrmPrincipal principal = new FrmPrincipal();
                 principal.Show();
+                //FrmPrincipal.Abrir_Frm_Principal(usuario.login);
+
                 //MDILayout mDILayout = new MDILayout();
                 //mDILayout.Show();
             }

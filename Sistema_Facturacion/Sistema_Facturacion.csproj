@@ -295,6 +295,12 @@
     <Compile Include="Presentacion\Frm_Proveedores.Designer.cs">
       <DependentUpon>Frm_Proveedores.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\Frm_Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Frm_Ventas.Designer.cs">
+      <DependentUpon>Frm_Ventas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -335,6 +341,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Frm_Proveedores.resx">
       <DependentUpon>Frm_Proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Frm_Ventas.resx">
+      <DependentUpon>Frm_Ventas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -398,6 +407,7 @@
       <DependentUpon>Db_Models.edmx</DependentUpon>
       <LastGenOutput>Db_Models.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\icons8-add-dollar-961.png" />
     <None Include="Resources\icons8-graduate-96.png" />
     <None Include="Resources\icons8-student-male-96.png" />
     <None Include="Resources\icons8-buy-for-change-48.png" />

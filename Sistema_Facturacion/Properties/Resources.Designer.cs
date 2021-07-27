@@ -63,6 +63,16 @@ namespace Sistema_Facturacion.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_add_dollar_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-add-dollar-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_add_user_male_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-add-user-male-48", resourceCulture);

@@ -1,4 +1,5 @@
-﻿using Sistema_Facturacion.Modelos;
+﻿using Sistema_Facturacion.Cache;
+using Sistema_Facturacion.Modelos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -45,6 +46,9 @@ namespace Sistema_Facturacion.Presentacion
             }
             else if (usuario.password == TBox_Pass.Text)
             {
+                UserLoginCache.IdUsuario = usuario.IdUsuario;
+                UserLoginCache.login = usuario.login;
+
 
                 Alert_Message.confirmacionForm("Login", $"Bienvenido {usuario.login}", "Success");
                 Console.WriteLine("Inicio Ok");

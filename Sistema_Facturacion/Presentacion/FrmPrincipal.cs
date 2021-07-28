@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sistema_Facturacion.Cache;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +26,10 @@ namespace Sistema_Facturacion.Presentacion
         {
             AbrirFormulario(new Frm_Productos());
         }
+        private void LoadDataUser()
+        {
+            Label_Nombre_Usuario.Text = UserLoginCache.login;
+        }
         private Form formActivado = null;
         private void AbrirFormulario(Form FormHijo)
         {
@@ -46,6 +51,7 @@ namespace Sistema_Facturacion.Presentacion
 
         private void Wrapper_Load(object sender, EventArgs e)
         {
+            LoadDataUser();
             AbrirFormulario(new Frm_Inicio());
          
         }

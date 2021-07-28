@@ -39,5 +39,6 @@ namespace Sistema_Facturacion.Modelos
         public virtual DbSet<TipoComprobantePago> TipoComprobantePagoes { get; set; }
         public virtual DbSet<Usuario> Usuarios { get; set; }
         public virtual DbSet<Vendedor> Vendedors { get; set; }
+        public virtual DbSet<Articulos_Vendidos> Articulos_Vendidos { get; set; }
     }
 }

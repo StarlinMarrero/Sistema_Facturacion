@@ -4,7 +4,19 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="SistemaFacturacionModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="SistemaFacturacionModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Articulos_Vendidos">
+          <Key>
+            <PropertyRef Name="Id_Articulo" />
+          </Key>
+          <Property Name="Id_Articulo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id_Producto" Type="int" />
+          <Property Name="Nombre_Articulo" Type="nvarchar(max)" />
+          <Property Name="Cantidad" Type="int" />
+          <Property Name="Precio_Unitario" Type="float" />
+          <Property Name="Precio_Total" Type="float" />
+          <Property Name="Id_Factura" Type="int" />
+        </EntityType>
         <EntityType Name="Cliente">
           <Key>
             <PropertyRef Name="IdCliente" />
@@ -335,6 +347,7 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="SistemaFacturacionModelStoreContainer">
+          <EntitySet Name="Articulos_Vendidos" EntityType="Self.Articulos_Vendidos" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Cliente" EntityType="Self.Cliente" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Compra" EntityType="Self.Compra" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ComprobantePago" EntityType="Self.ComprobantePago" Schema="dbo" store:Type="Tables" />
@@ -406,8 +419,7 @@
             <End Role="Usuarios" EntitySet="Usuarios" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="SistemaFacturacionModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -839,7 +851,20 @@
             <End Role="Vendedor" EntitySet="Vendedors" />
             <End Role="Usuarios" EntitySet="Usuarios" />
           </AssociationSet>
+          <EntitySet Name="Articulos_Vendidos" EntityType="SistemaFacturacionModel.Articulos_Vendidos" />
         </EntityContainer>
+        <EntityType Name="Articulos_Vendidos">
+          <Key>
+            <PropertyRef Name="Id_Articulo" />
+          </Key>
+          <Property Name="Id_Articulo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id_Producto" Type="Int32" />
+          <Property Name="Nombre_Articulo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Cantidad" Type="Int32" />
+          <Property Name="Precio_Unitario" Type="Double" />
+          <Property Name="Precio_Total" Type="Double" />
+          <Property Name="Id_Factura" Type="Int32" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -1012,6 +1037,19 @@
                 <ScalarProperty Name="DireccionVendedor" ColumnName="DireccionVendedor" />
                 <ScalarProperty Name="DNIVendedor" ColumnName="DNIVendedor" />
                 <ScalarProperty Name="EstadoVendedor" ColumnName="EstadoVendedor" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Articulos_Vendidos">
+            <EntityTypeMapping TypeName="SistemaFacturacionModel.Articulos_Vendidos">
+              <MappingFragment StoreEntitySet="Articulos_Vendidos">
+                <ScalarProperty Name="Id_Factura" ColumnName="Id_Factura" />
+                <ScalarProperty Name="Precio_Total" ColumnName="Precio_Total" />
+                <ScalarProperty Name="Precio_Unitario" ColumnName="Precio_Unitario" />
+                <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+                <ScalarProperty Name="Nombre_Articulo" ColumnName="Nombre_Articulo" />
+                <ScalarProperty Name="Id_Producto" ColumnName="Id_Producto" />
+                <ScalarProperty Name="Id_Articulo" ColumnName="Id_Articulo" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

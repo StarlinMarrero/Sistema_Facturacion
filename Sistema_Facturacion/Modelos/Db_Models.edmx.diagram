@@ -33,6 +33,7 @@
         <AssociationConnector Association="SistemaFacturacionModel.FK_DetalleCompra_Producto" ManuallyRouted="false" />
         <AssociationConnector Association="SistemaFacturacionModel.FK__Facturas__IdVend__403A8C7D" ManuallyRouted="false" />
         <AssociationConnector Association="SistemaFacturacionModel.FK_Usuarios_Vendedor" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="SistemaFacturacionModel.Articulos_Vendidos" Width="1.5" PointX="8.375" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

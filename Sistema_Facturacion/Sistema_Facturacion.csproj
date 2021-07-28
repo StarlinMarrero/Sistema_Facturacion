@@ -172,6 +172,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cache\Datos_Factura_Cache.cs" />
+    <Compile Include="Cache\UserLoginCache.cs" />
+    <Compile Include="Clases\Factura.cs" />
+    <Compile Include="Modelos\Articulos_Vendidos.cs">
+      <DependentUpon>Db_Models.tt</DependentUpon>
+    </Compile>
     <Compile Include="Modelos\Cliente.cs">
       <DependentUpon>Db_Models.tt</DependentUpon>
     </Compile>
@@ -241,11 +247,23 @@
     <Compile Include="Presentacion\FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\Frm_Buscar_Cliente_Para_Cobrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Frm_Buscar_Cliente_Para_Cobrar.Designer.cs">
+      <DependentUpon>Frm_Buscar_Cliente_Para_Cobrar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\Frm_Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentacion\Frm_Clientes.Designer.cs">
       <DependentUpon>Frm_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Frm_Cobrar_Factura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Frm_Cobrar_Factura.Designer.cs">
+      <DependentUpon>Frm_Cobrar_Factura.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Frm_Editar_Cliente.cs">
       <SubType>Form</SubType>
@@ -315,8 +333,14 @@
     <EmbeddedResource Include="Presentacion\FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Frm_Buscar_Cliente_Para_Cobrar.resx">
+      <DependentUpon>Frm_Buscar_Cliente_Para_Cobrar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Frm_Clientes.resx">
       <DependentUpon>Frm_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Frm_Cobrar_Factura.resx">
+      <DependentUpon>Frm_Cobrar_Factura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Frm_Editar_Cliente.resx">
       <DependentUpon>Frm_Editar_Cliente.cs</DependentUpon>

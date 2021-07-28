@@ -30,22 +30,22 @@ namespace Sistema_Facturacion.Presentacion
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.SideBarLeft = new System.Windows.Forms.Panel();
             this.Btn_Inicio = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.Lb_Nombre_Negocio = new Bunifu.UI.WinForms.BunifuLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.Lb_Nombre_Usuario = new Bunifu.UI.WinForms.BunifuLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Btn_Ventas = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.Btn_Proveedores = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.Btn_Clientes = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.Btn_Productos = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.Wrapper = new System.Windows.Forms.Panel();
+            this.Label_Nombre_Usuario = new System.Windows.Forms.Label();
             this.SideBarLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -54,10 +54,10 @@ namespace Sistema_Facturacion.Presentacion
             // SideBarLeft
             // 
             this.SideBarLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.SideBarLeft.Controls.Add(this.Label_Nombre_Usuario);
             this.SideBarLeft.Controls.Add(this.Btn_Inicio);
             this.SideBarLeft.Controls.Add(this.Lb_Nombre_Negocio);
             this.SideBarLeft.Controls.Add(this.pictureBox2);
-            this.SideBarLeft.Controls.Add(this.Lb_Nombre_Usuario);
             this.SideBarLeft.Controls.Add(this.pictureBox1);
             this.SideBarLeft.Controls.Add(this.Btn_Ventas);
             this.SideBarLeft.Controls.Add(this.Btn_Proveedores);
@@ -88,11 +88,11 @@ namespace Sistema_Facturacion.Presentacion
             this.Btn_Inicio.ColorContrastOnClick = 45;
             this.Btn_Inicio.ColorContrastOnHover = 45;
             this.Btn_Inicio.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.Btn_Inicio.CustomizableEdges = borderEdges1;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.Btn_Inicio.CustomizableEdges = borderEdges6;
             this.Btn_Inicio.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Btn_Inicio.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Btn_Inicio.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -187,24 +187,6 @@ namespace Sistema_Facturacion.Presentacion
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
-            // Lb_Nombre_Usuario
-            // 
-            this.Lb_Nombre_Usuario.AllowParentOverrides = false;
-            this.Lb_Nombre_Usuario.AutoEllipsis = false;
-            this.Lb_Nombre_Usuario.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Lb_Nombre_Usuario.CursorType = System.Windows.Forms.Cursors.Default;
-            this.Lb_Nombre_Usuario.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Lb_Nombre_Usuario.ForeColor = System.Drawing.SystemColors.Control;
-            this.Lb_Nombre_Usuario.Location = new System.Drawing.Point(46, 196);
-            this.Lb_Nombre_Usuario.Name = "Lb_Nombre_Usuario";
-            this.Lb_Nombre_Usuario.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Lb_Nombre_Usuario.Size = new System.Drawing.Size(89, 15);
-            this.Lb_Nombre_Usuario.TabIndex = 5;
-            this.Lb_Nombre_Usuario.Text = "Nombre_Usuario";
-            this.Lb_Nombre_Usuario.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.Lb_Nombre_Usuario.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.Lb_Nombre_Usuario.Click += new System.EventHandler(this.bunifuLabel1_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -233,11 +215,11 @@ namespace Sistema_Facturacion.Presentacion
             this.Btn_Ventas.ColorContrastOnClick = 45;
             this.Btn_Ventas.ColorContrastOnHover = 45;
             this.Btn_Ventas.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.Btn_Ventas.CustomizableEdges = borderEdges2;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            this.Btn_Ventas.CustomizableEdges = borderEdges7;
             this.Btn_Ventas.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Btn_Ventas.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Btn_Ventas.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -323,11 +305,11 @@ namespace Sistema_Facturacion.Presentacion
             this.Btn_Proveedores.ColorContrastOnClick = 45;
             this.Btn_Proveedores.ColorContrastOnHover = 45;
             this.Btn_Proveedores.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.Btn_Proveedores.CustomizableEdges = borderEdges3;
+            borderEdges8.BottomLeft = true;
+            borderEdges8.BottomRight = true;
+            borderEdges8.TopLeft = true;
+            borderEdges8.TopRight = true;
+            this.Btn_Proveedores.CustomizableEdges = borderEdges8;
             this.Btn_Proveedores.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Btn_Proveedores.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Btn_Proveedores.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -413,11 +395,11 @@ namespace Sistema_Facturacion.Presentacion
             this.Btn_Clientes.ColorContrastOnClick = 45;
             this.Btn_Clientes.ColorContrastOnHover = 45;
             this.Btn_Clientes.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.Btn_Clientes.CustomizableEdges = borderEdges4;
+            borderEdges9.BottomLeft = true;
+            borderEdges9.BottomRight = true;
+            borderEdges9.TopLeft = true;
+            borderEdges9.TopRight = true;
+            this.Btn_Clientes.CustomizableEdges = borderEdges9;
             this.Btn_Clientes.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Btn_Clientes.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Btn_Clientes.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -503,11 +485,11 @@ namespace Sistema_Facturacion.Presentacion
             this.Btn_Productos.ColorContrastOnClick = 45;
             this.Btn_Productos.ColorContrastOnHover = 45;
             this.Btn_Productos.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.Btn_Productos.CustomizableEdges = borderEdges5;
+            borderEdges10.BottomLeft = true;
+            borderEdges10.BottomRight = true;
+            borderEdges10.TopLeft = true;
+            borderEdges10.TopRight = true;
+            this.Btn_Productos.CustomizableEdges = borderEdges10;
             this.Btn_Productos.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Btn_Productos.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Btn_Productos.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -582,6 +564,17 @@ namespace Sistema_Facturacion.Presentacion
             this.Wrapper.Size = new System.Drawing.Size(911, 686);
             this.Wrapper.TabIndex = 1;
             // 
+            // Label_Nombre_Usuario
+            // 
+            this.Label_Nombre_Usuario.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_Nombre_Usuario.ForeColor = System.Drawing.SystemColors.Control;
+            this.Label_Nombre_Usuario.Location = new System.Drawing.Point(12, 180);
+            this.Label_Nombre_Usuario.Name = "Label_Nombre_Usuario";
+            this.Label_Nombre_Usuario.Size = new System.Drawing.Size(157, 23);
+            this.Label_Nombre_Usuario.TabIndex = 9;
+            this.Label_Nombre_Usuario.Text = "Nombre Usuario";
+            this.Label_Nombre_Usuario.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -613,9 +606,9 @@ namespace Sistema_Facturacion.Presentacion
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton Btn_Ventas;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton Btn_Proveedores;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Bunifu.UI.WinForms.BunifuLabel Lb_Nombre_Usuario;
         private System.Windows.Forms.PictureBox pictureBox2;
         private Bunifu.UI.WinForms.BunifuLabel Lb_Nombre_Negocio;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton Btn_Inicio;
+        private System.Windows.Forms.Label Label_Nombre_Usuario;
     }
 }

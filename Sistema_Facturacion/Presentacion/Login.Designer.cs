@@ -30,7 +30,7 @@ namespace Sistema_Facturacion.Presentacion
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login_Form));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.Btn_Login = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.Tbox_User = new System.Windows.Forms.TextBox();
             this.TBox_Pass = new System.Windows.Forms.TextBox();
@@ -62,11 +62,11 @@ namespace Sistema_Facturacion.Presentacion
             this.Btn_Login.ColorContrastOnClick = 45;
             this.Btn_Login.ColorContrastOnHover = 45;
             this.Btn_Login.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.Btn_Login.CustomizableEdges = borderEdges1;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.Btn_Login.CustomizableEdges = borderEdges2;
             this.Btn_Login.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Btn_Login.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Btn_Login.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -90,7 +90,7 @@ namespace Sistema_Facturacion.Presentacion
             this.Btn_Login.IdleIconLeftImage = null;
             this.Btn_Login.IdleIconRightImage = null;
             this.Btn_Login.IndicateFocus = false;
-            this.Btn_Login.Location = new System.Drawing.Point(59, 329);
+            this.Btn_Login.Location = new System.Drawing.Point(66, 329);
             this.Btn_Login.Name = "Btn_Login";
             this.Btn_Login.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Btn_Login.OnDisabledState.BorderRadius = 1;
@@ -230,6 +230,7 @@ namespace Sistema_Facturacion.Presentacion
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login_Form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Iniciar Cuenta";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

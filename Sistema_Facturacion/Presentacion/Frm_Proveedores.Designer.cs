@@ -30,8 +30,15 @@ namespace Sistema_Facturacion.Presentacion
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Proveedores));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Panel_Wrapper = new Bunifu.UI.WinForms.BunifuPanel();
@@ -47,6 +54,10 @@ namespace Sistema_Facturacion.Presentacion
             this.Btn_Editar = new Bunifu.Framework.UI.BunifuTileButton();
             this.Btn_Registrar = new Bunifu.Framework.UI.BunifuTileButton();
             this.TablaProveedor = new System.Windows.Forms.DataGridView();
+            this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.Label_Cantidad_Proveedor = new Bunifu.UI.WinForms.BunifuLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.idProveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreProveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RUCProveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,10 +65,6 @@ namespace Sistema_Facturacion.Presentacion
             this.TelefonoProveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EstadoProveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.Label_Cantidad_Proveedor = new Bunifu.UI.WinForms.BunifuLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.Panel_Wrapper.SuspendLayout();
             this.Panel_Card_Compras.SuspendLayout();
@@ -154,11 +161,11 @@ namespace Sistema_Facturacion.Presentacion
             this.Btn_Actualizar.ColorContrastOnClick = 45;
             this.Btn_Actualizar.ColorContrastOnHover = 45;
             this.Btn_Actualizar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.Btn_Actualizar.CustomizableEdges = borderEdges3;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.Btn_Actualizar.CustomizableEdges = borderEdges1;
             this.Btn_Actualizar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Btn_Actualizar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Btn_Actualizar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -251,11 +258,11 @@ namespace Sistema_Facturacion.Presentacion
             this.Btn_Buscar.ColorContrastOnClick = 45;
             this.Btn_Buscar.ColorContrastOnHover = 45;
             this.Btn_Buscar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.Btn_Buscar.CustomizableEdges = borderEdges4;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.Btn_Buscar.CustomizableEdges = borderEdges2;
             this.Btn_Buscar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Btn_Buscar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Btn_Buscar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -474,57 +481,6 @@ namespace Sistema_Facturacion.Presentacion
             this.TablaProveedor.TabIndex = 31;
             this.TablaProveedor.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TablaProveedor_CellClick);
             // 
-            // idProveedor
-            // 
-            this.idProveedor.DataPropertyName = "idProveedor";
-            this.idProveedor.HeaderText = "Codigo";
-            this.idProveedor.Name = "idProveedor";
-            this.idProveedor.ReadOnly = true;
-            // 
-            // nombreProveedor
-            // 
-            this.nombreProveedor.DataPropertyName = "nombreProveedor";
-            this.nombreProveedor.HeaderText = "Razon Social";
-            this.nombreProveedor.Name = "nombreProveedor";
-            this.nombreProveedor.ReadOnly = true;
-            // 
-            // RUCProveedor
-            // 
-            this.RUCProveedor.DataPropertyName = "RUCProveedor";
-            this.RUCProveedor.HeaderText = "RUC";
-            this.RUCProveedor.Name = "RUCProveedor";
-            this.RUCProveedor.ReadOnly = true;
-            // 
-            // direccionProveedor
-            // 
-            this.direccionProveedor.DataPropertyName = "direccionProveedor";
-            this.direccionProveedor.HeaderText = "Dirección";
-            this.direccionProveedor.Name = "direccionProveedor";
-            this.direccionProveedor.ReadOnly = true;
-            // 
-            // TelefonoProveedor
-            // 
-            this.TelefonoProveedor.DataPropertyName = "TelefonoProveedor";
-            this.TelefonoProveedor.HeaderText = "Teléfono";
-            this.TelefonoProveedor.Name = "TelefonoProveedor";
-            this.TelefonoProveedor.ReadOnly = true;
-            // 
-            // FechaRegistro
-            // 
-            this.FechaRegistro.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.FechaRegistro.DataPropertyName = "FechaRegistro";
-            this.FechaRegistro.HeaderText = "Fecha Registro";
-            this.FechaRegistro.Name = "FechaRegistro";
-            this.FechaRegistro.ReadOnly = true;
-            // 
-            // EstadoProveedor
-            // 
-            this.EstadoProveedor.DataPropertyName = "EstadoProveedor";
-            this.EstadoProveedor.HeaderText = "EstadoProveedor";
-            this.EstadoProveedor.Name = "EstadoProveedor";
-            this.EstadoProveedor.ReadOnly = true;
-            this.EstadoProveedor.Visible = false;
-            // 
             // bunifuShadowPanel1
             // 
             this.bunifuShadowPanel1.BackColor = System.Drawing.Color.Transparent;
@@ -593,6 +549,71 @@ namespace Sistema_Facturacion.Presentacion
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // idProveedor
+            // 
+            this.idProveedor.DataPropertyName = "idProveedor";
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.idProveedor.DefaultCellStyle = dataGridViewCellStyle1;
+            this.idProveedor.HeaderText = "Codigo";
+            this.idProveedor.Name = "idProveedor";
+            this.idProveedor.ReadOnly = true;
+            // 
+            // nombreProveedor
+            // 
+            this.nombreProveedor.DataPropertyName = "nombreProveedor";
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.nombreProveedor.DefaultCellStyle = dataGridViewCellStyle2;
+            this.nombreProveedor.HeaderText = "Razon Social";
+            this.nombreProveedor.Name = "nombreProveedor";
+            this.nombreProveedor.ReadOnly = true;
+            // 
+            // RUCProveedor
+            // 
+            this.RUCProveedor.DataPropertyName = "RUCProveedor";
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.RUCProveedor.DefaultCellStyle = dataGridViewCellStyle3;
+            this.RUCProveedor.HeaderText = "RUC";
+            this.RUCProveedor.Name = "RUCProveedor";
+            this.RUCProveedor.ReadOnly = true;
+            // 
+            // direccionProveedor
+            // 
+            this.direccionProveedor.DataPropertyName = "direccionProveedor";
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.direccionProveedor.DefaultCellStyle = dataGridViewCellStyle4;
+            this.direccionProveedor.HeaderText = "Dirección";
+            this.direccionProveedor.Name = "direccionProveedor";
+            this.direccionProveedor.ReadOnly = true;
+            // 
+            // TelefonoProveedor
+            // 
+            this.TelefonoProveedor.DataPropertyName = "TelefonoProveedor";
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TelefonoProveedor.DefaultCellStyle = dataGridViewCellStyle5;
+            this.TelefonoProveedor.HeaderText = "Teléfono";
+            this.TelefonoProveedor.Name = "TelefonoProveedor";
+            this.TelefonoProveedor.ReadOnly = true;
+            // 
+            // FechaRegistro
+            // 
+            this.FechaRegistro.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.FechaRegistro.DataPropertyName = "FechaRegistro";
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.FechaRegistro.DefaultCellStyle = dataGridViewCellStyle6;
+            this.FechaRegistro.HeaderText = "Fecha Registro";
+            this.FechaRegistro.Name = "FechaRegistro";
+            this.FechaRegistro.ReadOnly = true;
+            // 
+            // EstadoProveedor
+            // 
+            this.EstadoProveedor.DataPropertyName = "EstadoProveedor";
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.EstadoProveedor.DefaultCellStyle = dataGridViewCellStyle7;
+            this.EstadoProveedor.HeaderText = "EstadoProveedor";
+            this.EstadoProveedor.Name = "EstadoProveedor";
+            this.EstadoProveedor.ReadOnly = true;
+            this.EstadoProveedor.Visible = false;
+            // 
             // Frm_Proveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -625,13 +646,6 @@ namespace Sistema_Facturacion.Presentacion
         private System.Windows.Forms.Panel panel2;
         private Bunifu.UI.WinForms.BunifuPanel Panel_Wrapper;
         private System.Windows.Forms.DataGridView TablaProveedor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idProveedor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombreProveedor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RUCProveedor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn direccionProveedor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TelefonoProveedor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FechaRegistro;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EstadoProveedor;
         private Bunifu.Framework.UI.BunifuTileButton Btn_Eliminar;
         private Bunifu.Framework.UI.BunifuTileButton Btn_Editar;
         private Bunifu.Framework.UI.BunifuTileButton Btn_Registrar;
@@ -647,5 +661,12 @@ namespace Sistema_Facturacion.Presentacion
         private System.Windows.Forms.TextBox textBox_Buscar;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton Btn_Buscar;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idProveedor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreProveedor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RUCProveedor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn direccionProveedor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TelefonoProveedor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FechaRegistro;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EstadoProveedor;
     }
 }

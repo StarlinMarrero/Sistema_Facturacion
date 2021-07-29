@@ -58,7 +58,7 @@ namespace Sistema_Facturacion.Presentacion
             this.txtRazon_Social.MaxLength = 8;
             this.txtRazon_Social.Name = "txtRazon_Social";
             this.txtRazon_Social.Size = new System.Drawing.Size(195, 20);
-            this.txtRazon_Social.TabIndex = 12;
+            this.txtRazon_Social.TabIndex = 2;
             // 
             // bunifuLabel5
             // 
@@ -203,7 +203,7 @@ namespace Sistema_Facturacion.Presentacion
             this.Btn_Cancelar.OnPressedState.IconLeftImage = null;
             this.Btn_Cancelar.OnPressedState.IconRightImage = null;
             this.Btn_Cancelar.Size = new System.Drawing.Size(116, 39);
-            this.Btn_Cancelar.TabIndex = 15;
+            this.Btn_Cancelar.TabIndex = 7;
             this.Btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Btn_Cancelar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.Btn_Cancelar.TextMarginLeft = 0;
@@ -293,7 +293,7 @@ namespace Sistema_Facturacion.Presentacion
             this.Btn_Guardar.OnPressedState.IconLeftImage = null;
             this.Btn_Guardar.OnPressedState.IconRightImage = null;
             this.Btn_Guardar.Size = new System.Drawing.Size(116, 39);
-            this.Btn_Guardar.TabIndex = 14;
+            this.Btn_Guardar.TabIndex = 6;
             this.Btn_Guardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Btn_Guardar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.Btn_Guardar.TextMarginLeft = 0;
@@ -307,7 +307,7 @@ namespace Sistema_Facturacion.Presentacion
             this.txtDireccion.Location = new System.Drawing.Point(15, 185);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(387, 20);
-            this.txtDireccion.TabIndex = 10;
+            this.txtDireccion.TabIndex = 5;
             // 
             // label7
             // 
@@ -323,10 +323,10 @@ namespace Sistema_Facturacion.Presentacion
             // 
             this.txtTelefono.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTelefono.Location = new System.Drawing.Point(207, 137);
-            this.txtTelefono.MaxLength = 9;
+            this.txtTelefono.MaxLength = 10;
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(195, 20);
-            this.txtTelefono.TabIndex = 13;
+            this.txtTelefono.TabIndex = 4;
             // 
             // txtCodigo
             // 
@@ -334,7 +334,7 @@ namespace Sistema_Facturacion.Presentacion
             this.txtCodigo.Location = new System.Drawing.Point(15, 92);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(186, 20);
-            this.txtCodigo.TabIndex = 7;
+            this.txtCodigo.TabIndex = 1;
             // 
             // txtRUC_Proveedor
             // 
@@ -342,7 +342,7 @@ namespace Sistema_Facturacion.Presentacion
             this.txtRUC_Proveedor.Location = new System.Drawing.Point(15, 137);
             this.txtRUC_Proveedor.Name = "txtRUC_Proveedor";
             this.txtRUC_Proveedor.Size = new System.Drawing.Size(186, 20);
-            this.txtRUC_Proveedor.TabIndex = 11;
+            this.txtRUC_Proveedor.TabIndex = 3;
             // 
             // label1
             // 

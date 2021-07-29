@@ -67,13 +67,13 @@ namespace Sistema_Facturacion.Presentacion
 
             this.Close();
         
-            textBox_Codigo.Text = "";
-            textBox_Nombre_Producto.Text = "";
-            textBox_Marca.Text = "";
-            textBox_Precio.Text = "";
-            textBox_Precio_Producto.Text = "";
-            textBox_Stock.Text = "";
-            textBox_Medida.Text = "";
+            //textBox_Codigo.Text = "";
+            //textBox_Nombre_Producto.Text = "";
+            //textBox_Marca.Text = "";
+            //textBox_Precio.Text = "";
+            //textBox_Precio_Producto.Text = "";
+            //textBox_Stock.Text = "";
+            //textBox_Medida.Text = "";
 
 
         }

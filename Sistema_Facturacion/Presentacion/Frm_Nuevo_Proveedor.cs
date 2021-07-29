@@ -28,15 +28,24 @@ namespace Sistema_Facturacion.Presentacion
         {
             if (txtCodigo.Text == "" || txtRazon_Social.Text == "" || txtRUC_Proveedor.Text == "" || txtDireccion.Text == "")
             {
-                Alert_Message.confirmacionForm("Campos del Proveedor", "Favor de completar los campos requeridos", "Success");
+                Alert_Message.confirmacionForm("Campos del Proveedor", "Favor de completar los campos requeridos", "Info");
+
+                return;
+            }
+            var Id_Proveedor = Convert.ToInt32(txtCodigo.Text);
+            var validar_proveedor = db.Proveedors.Where(x => x.idProveedor == Id_Proveedor);
+
+            if (validar_proveedor.FirstOrDefault() != null)
+            {
+                Alert_Message.confirmacionForm("Código del Proveedor", "El código de proveedor está duplicado.", "Info");
 
                 return;
             }
 
-
+          
             var model = new Proveedor
             {
-                idProveedor = Convert.ToInt32(txtCodigo.Text),
+                idProveedor = Id_Proveedor,
                 nombreProveedor = txtRazon_Social.Text,
                 RUCProveedor = txtRUC_Proveedor.Text,
                 TelefonoProveedor = txtTelefono.Text,

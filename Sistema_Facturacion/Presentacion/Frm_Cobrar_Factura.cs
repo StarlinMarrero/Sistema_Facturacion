@@ -20,16 +20,7 @@ namespace Sistema_Facturacion.Presentacion
             InitializeComponent();
         }
 
-        public void ObtenerCliente(int IdCLiente, string Nombre_Cliente)
-        {
-            label_Cliente_ID.Text = IdCLiente.ToString();
-            Label_Cliente.Text = Nombre_Cliente;
-
-            label_Cliente_ID.Visible = true;
-            Label_Cliente.Visible = true;
-
-            this.Focus();
-        }
+      
         public void Datos_Factura()
         {
 
@@ -57,9 +48,9 @@ namespace Sistema_Facturacion.Presentacion
                 Fecha = DateTime.Now,
                 Total = Datos_Factura_Cache.Monto_Cobrar,
                 Igv = Convert.ToDecimal(textBox_monto.Text),
-                IdCliente = 0,
+                IdCliente = Datos_Factura_Cache.IdCliente,
                 IdVendedor = UserLoginCache.IdUsuario,
-
+                
 
 
             };
@@ -104,8 +95,9 @@ namespace Sistema_Facturacion.Presentacion
 
             Datos_Factura_Cache.Monto_Cobrar = 0;
             Datos_Factura_Cache.List_articulos_Vendidos = new List<Articulos_Vendidos>();
+            Datos_Factura_Cache.IdCliente = 0;
+            Datos_Factura_Cache.Nombre_Cliente = null;
 
-           
 
 
         }
@@ -122,11 +114,6 @@ namespace Sistema_Facturacion.Presentacion
         {
             Datos_Factura();
         }
-
-        private void btn_cliente_Click(object sender, EventArgs e)
-        {
-            Frm_Buscar_Cliente_Para_Cobrar frm_Buscar_Cliente_Para_Cobrar = new Frm_Buscar_Cliente_Para_Cobrar();
-            frm_Buscar_Cliente_Para_Cobrar.ShowDialog();
-        }
+       
     }
 }

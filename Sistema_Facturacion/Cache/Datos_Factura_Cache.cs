@@ -15,6 +15,9 @@ namespace Sistema_Facturacion.Cache
         public static List<Articulos_Vendidos> Get_Productos { get; set; }
         public static decimal Monto_Cobrar { get; set; }
 
+        public static int IdCliente { get; set; }
+        public static string Nombre_Cliente { get; set; }
+
         public Datos_Factura_Cache()
         {
             Get_Productos = new List<Articulos_Vendidos>();

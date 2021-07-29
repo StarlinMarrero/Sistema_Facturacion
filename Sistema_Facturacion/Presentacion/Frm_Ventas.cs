@@ -19,7 +19,7 @@ namespace Sistema_Facturacion.Presentacion
         {
             InitializeComponent();
         }
-
+       
         private void Btn_Enter_Click(object sender, EventArgs e)
         {
             Add_Producto_A_Lista();
@@ -237,5 +237,44 @@ namespace Sistema_Facturacion.Presentacion
             Label_Total.Text = "0";
         }
 
+    
+        private void btn_cliente_Click(object sender, EventArgs e)
+        {
+            Frm_Buscar_Cliente_Para_Cobrar frm_Buscar_Cliente_Para_Cobrar = new Frm_Buscar_Cliente_Para_Cobrar();
+            frm_Buscar_Cliente_Para_Cobrar.ShowDialog();
+        }
+
+        private void Btn_Buscar_Cliente_Click(object sender, EventArgs e)
+        {
+            var id = Convert.ToInt32(textBox_buscar_cliente.Text);
+            var cliente = db.Clientes.Find(id);
+            if (cliente == null)
+            {
+                Alert_Message.confirmacionForm("Cliente No Encontrado", "No se puede encontrar ningún cliente con este ID / código de cliente", "Info");
+                Datos_Factura_Cache.IdCliente = 0;
+                Datos_Factura_Cache.Nombre_Cliente = null;
+                Label_ClienteID.Text = "ID Cliente";
+                Label_CLiente.Text = "Ningún cliente seleccionado";
+                return;
+            }
+            if (cliente.EstadoCliente == false)
+            {
+                Alert_Message.confirmacionForm("Cliente Desactivado", "Este cliente esta desactivado en el sistema", "Info");
+                Datos_Factura_Cache.IdCliente = 0;
+                Datos_Factura_Cache.Nombre_Cliente = null;
+                Label_ClienteID.Text = "ID Cliente";
+                Label_CLiente.Text = "Ningún cliente seleccionado";
+                return;
+            }
+          
+
+            Label_ClienteID.Text = cliente.IdCliente.ToString();
+            Label_CLiente.Text = cliente.NombreCliente.ToString();
+    
+
+            Datos_Factura_Cache.IdCliente = cliente.IdCliente;
+            Datos_Factura_Cache.Nombre_Cliente = cliente.NombreCliente;
+
+        }
     }
 }

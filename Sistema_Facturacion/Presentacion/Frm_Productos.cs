@@ -27,6 +27,12 @@ namespace Sistema_Facturacion.Presentacion
         private void Frm_Productos_Load(object sender, EventArgs e)
         {
             Cargar_Productos();
+
+            var productos = db.Productoes.ToList();
+
+            Label_Total_Productos.Text = productos.Count().ToString();
+            Label_Total_Valor.Text = $"${productos.Sum(x => x.PCProducto)}";
+
         }
         public void OcultarMoverAncharColumns()
         {
@@ -102,7 +108,9 @@ namespace Sistema_Facturacion.Presentacion
 
         private void Btn_Actualizar_Click(object sender, EventArgs e)
         {
+            dataGridView_Productos.RefreshEdit();
             Cargar_Productos();
+
         }
 
         private void TablaProductos_CellContentClickAsync(object sender, DataGridViewCellEventArgs e)
@@ -121,6 +129,16 @@ namespace Sistema_Facturacion.Presentacion
                     Cargar_Productos();
                 }
             }
+            else if (dataGridView_Productos.Rows[e.RowIndex].Cells["Editar"].Selected)
+            {
+                int Id = Convert.ToInt32(dataGridView_Productos.Rows[e.RowIndex].Cells[2].Value.ToString());
+                Frm_Editar_Producto frm_Editar_Producto = new Frm_Editar_Producto();
+                frm_Editar_Producto.Obtener_Producto(Id);
+
+
+
+            }
+
         }
     }
 }

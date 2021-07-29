@@ -32,16 +32,7 @@ namespace Sistema_Facturacion.Presentacion
 
         private void Tabla_Clientes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            var NumeroDeFilaSeleccionada = Tabla_Clientes.CurrentRow.Index;
-            DataGridViewRow row = this.Tabla_Clientes.Rows[NumeroDeFilaSeleccionada];
-            var IdCliente = Convert.ToInt32(row.Cells["IdCliente"].Value.ToString());
-            var Nombre_Cliente = row.Cells["NombreCliente"].Value.ToString() + " " + row.Cells["ApellidoCliente"].Value.ToString();
-
-            Frm_Cobrar_Factura frm_Cobrar_Factura = new Frm_Cobrar_Factura();
-            frm_Cobrar_Factura.ObtenerCliente(IdCliente, Nombre_Cliente);
-
-            MessageBox.Show(Nombre_Cliente);
-
+           
 
         }
     }

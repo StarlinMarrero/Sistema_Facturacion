@@ -30,21 +30,20 @@ namespace Sistema_Facturacion.Presentacion
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Productos));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.Label_Total_Productos = new Bunifu.UI.WinForms.BunifuLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.bunifuShadowPanel2 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Panel_Acciones = new System.Windows.Forms.Panel();
             this.Btn_Actualizar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -59,6 +58,7 @@ namespace Sistema_Facturacion.Presentacion
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.Label_Titulo = new Bunifu.UI.WinForms.BunifuLabel();
+            this.Label_Total_Valor = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.bunifuShadowPanel1.SuspendLayout();
@@ -81,7 +81,7 @@ namespace Sistema_Facturacion.Presentacion
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 50);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1650, 950);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(895, 597);
             this.flowLayoutPanel1.TabIndex = 2;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
@@ -90,7 +90,7 @@ namespace Sistema_Facturacion.Presentacion
             this.panel1.Controls.Add(this.bunifuShadowPanel1);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(405, 128);
+            this.panel1.Size = new System.Drawing.Size(478, 128);
             this.panel1.TabIndex = 0;
             // 
             // bunifuShadowPanel1
@@ -100,11 +100,11 @@ namespace Sistema_Facturacion.Presentacion
             this.bunifuShadowPanel1.BorderRadius = 1;
             this.bunifuShadowPanel1.BorderThickness = 1;
             this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel2);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel1);
+            this.bunifuShadowPanel1.Controls.Add(this.Label_Total_Productos);
             this.bunifuShadowPanel1.Controls.Add(this.pictureBox1);
             this.bunifuShadowPanel1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.bunifuShadowPanel1.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel1.Location = new System.Drawing.Point(6, 3);
+            this.bunifuShadowPanel1.Location = new System.Drawing.Point(3, 3);
             this.bunifuShadowPanel1.Name = "bunifuShadowPanel1";
             this.bunifuShadowPanel1.PanelColor = System.Drawing.Color.WhiteSmoke;
             this.bunifuShadowPanel1.PanelColor2 = System.Drawing.Color.WhiteSmoke;
@@ -135,22 +135,22 @@ namespace Sistema_Facturacion.Presentacion
             this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             this.bunifuLabel2.Click += new System.EventHandler(this.bunifuLabel2_Click_1);
             // 
-            // bunifuLabel1
+            // Label_Total_Productos
             // 
-            this.bunifuLabel1.AllowParentOverrides = false;
-            this.bunifuLabel1.AutoEllipsis = false;
-            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.bunifuLabel1.Location = new System.Drawing.Point(303, 16);
-            this.bunifuLabel1.Name = "bunifuLabel1";
-            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(56, 65);
-            this.bunifuLabel1.TabIndex = 1;
-            this.bunifuLabel1.Text = "10";
-            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.Label_Total_Productos.AllowParentOverrides = false;
+            this.Label_Total_Productos.AutoEllipsis = false;
+            this.Label_Total_Productos.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Label_Total_Productos.CursorType = System.Windows.Forms.Cursors.Default;
+            this.Label_Total_Productos.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold);
+            this.Label_Total_Productos.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Label_Total_Productos.Location = new System.Drawing.Point(303, 16);
+            this.Label_Total_Productos.Name = "Label_Total_Productos";
+            this.Label_Total_Productos.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Label_Total_Productos.Size = new System.Drawing.Size(56, 65);
+            this.Label_Total_Productos.TabIndex = 1;
+            this.Label_Total_Productos.Text = "10";
+            this.Label_Total_Productos.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Label_Total_Productos.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // pictureBox1
             // 
@@ -165,7 +165,7 @@ namespace Sistema_Facturacion.Presentacion
             // panel2
             // 
             this.panel2.Controls.Add(this.bunifuShadowPanel2);
-            this.panel2.Location = new System.Drawing.Point(414, 3);
+            this.panel2.Location = new System.Drawing.Point(487, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(405, 128);
             this.panel2.TabIndex = 1;
@@ -176,12 +176,12 @@ namespace Sistema_Facturacion.Presentacion
             this.bunifuShadowPanel2.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.bunifuShadowPanel2.BorderRadius = 1;
             this.bunifuShadowPanel2.BorderThickness = 1;
+            this.bunifuShadowPanel2.Controls.Add(this.Label_Total_Valor);
             this.bunifuShadowPanel2.Controls.Add(this.bunifuLabel3);
-            this.bunifuShadowPanel2.Controls.Add(this.bunifuLabel4);
             this.bunifuShadowPanel2.Controls.Add(this.pictureBox2);
             this.bunifuShadowPanel2.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.bunifuShadowPanel2.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel2.Location = new System.Drawing.Point(3, 3);
+            this.bunifuShadowPanel2.Location = new System.Drawing.Point(6, 3);
             this.bunifuShadowPanel2.Name = "bunifuShadowPanel2";
             this.bunifuShadowPanel2.PanelColor = System.Drawing.Color.WhiteSmoke;
             this.bunifuShadowPanel2.PanelColor2 = System.Drawing.Color.WhiteSmoke;
@@ -211,23 +211,6 @@ namespace Sistema_Facturacion.Presentacion
             this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             this.bunifuLabel3.Click += new System.EventHandler(this.bunifuLabel3_Click);
             // 
-            // bunifuLabel4
-            // 
-            this.bunifuLabel4.AllowParentOverrides = false;
-            this.bunifuLabel4.AutoEllipsis = false;
-            this.bunifuLabel4.CursorType = null;
-            this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.bunifuLabel4.Location = new System.Drawing.Point(303, 16);
-            this.bunifuLabel4.Name = "bunifuLabel4";
-            this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(84, 65);
-            this.bunifuLabel4.TabIndex = 1;
-            this.bunifuLabel4.Text = "$10";
-            this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuLabel4.Click += new System.EventHandler(this.bunifuLabel4_Click);
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Sistema_Facturacion.Properties.Resources.icons8_money_circulation_96;
@@ -247,7 +230,7 @@ namespace Sistema_Facturacion.Presentacion
             this.Panel_Acciones.Controls.Add(this.Btn_Nuevo_Prod);
             this.Panel_Acciones.Location = new System.Drawing.Point(3, 137);
             this.Panel_Acciones.Name = "Panel_Acciones";
-            this.Panel_Acciones.Size = new System.Drawing.Size(1537, 128);
+            this.Panel_Acciones.Size = new System.Drawing.Size(888, 128);
             this.Panel_Acciones.TabIndex = 4;
             // 
             // Btn_Actualizar
@@ -269,11 +252,11 @@ namespace Sistema_Facturacion.Presentacion
             this.Btn_Actualizar.ColorContrastOnClick = 45;
             this.Btn_Actualizar.ColorContrastOnHover = 45;
             this.Btn_Actualizar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.Btn_Actualizar.CustomizableEdges = borderEdges1;
+            borderEdges10.BottomLeft = true;
+            borderEdges10.BottomRight = true;
+            borderEdges10.TopLeft = true;
+            borderEdges10.TopRight = true;
+            this.Btn_Actualizar.CustomizableEdges = borderEdges10;
             this.Btn_Actualizar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Btn_Actualizar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Btn_Actualizar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -359,11 +342,11 @@ namespace Sistema_Facturacion.Presentacion
             this.Btn_Buscar_Prod.ColorContrastOnClick = 45;
             this.Btn_Buscar_Prod.ColorContrastOnHover = 45;
             this.Btn_Buscar_Prod.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.Btn_Buscar_Prod.CustomizableEdges = borderEdges2;
+            borderEdges11.BottomLeft = true;
+            borderEdges11.BottomRight = true;
+            borderEdges11.TopLeft = true;
+            borderEdges11.TopRight = true;
+            this.Btn_Buscar_Prod.CustomizableEdges = borderEdges11;
             this.Btn_Buscar_Prod.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Btn_Buscar_Prod.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Btn_Buscar_Prod.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -467,11 +450,11 @@ namespace Sistema_Facturacion.Presentacion
             this.Btn_Nuevo_Prod.ColorContrastOnClick = 45;
             this.Btn_Nuevo_Prod.ColorContrastOnHover = 45;
             this.Btn_Nuevo_Prod.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.Btn_Nuevo_Prod.CustomizableEdges = borderEdges3;
+            borderEdges12.BottomLeft = true;
+            borderEdges12.BottomRight = true;
+            borderEdges12.TopLeft = true;
+            borderEdges12.TopRight = true;
+            this.Btn_Nuevo_Prod.CustomizableEdges = borderEdges12;
             this.Btn_Nuevo_Prod.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Btn_Nuevo_Prod.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Btn_Nuevo_Prod.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -550,7 +533,7 @@ namespace Sistema_Facturacion.Presentacion
             this.bunifuPanel2.Location = new System.Drawing.Point(3, 271);
             this.bunifuPanel2.Name = "bunifuPanel2";
             this.bunifuPanel2.ShowBorders = true;
-            this.bunifuPanel2.Size = new System.Drawing.Size(1635, 539);
+            this.bunifuPanel2.Size = new System.Drawing.Size(888, 326);
             this.bunifuPanel2.TabIndex = 5;
             // 
             // dataGridView_Productos
@@ -558,9 +541,9 @@ namespace Sistema_Facturacion.Presentacion
             this.dataGridView_Productos.AllowUserToAddRows = false;
             this.dataGridView_Productos.AllowUserToDeleteRows = false;
             this.dataGridView_Productos.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.DimGray;
-            this.dataGridView_Productos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.DimGray;
+            this.dataGridView_Productos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView_Productos.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView_Productos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView_Productos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -571,14 +554,14 @@ namespace Sistema_Facturacion.Presentacion
             this.Editar,
             this.Eliminar});
             this.dataGridView_Productos.GridColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dataGridView_Productos.Location = new System.Drawing.Point(9, 12);
+            this.dataGridView_Productos.Location = new System.Drawing.Point(0, 0);
             this.dataGridView_Productos.Margin = new System.Windows.Forms.Padding(8);
             this.dataGridView_Productos.Name = "dataGridView_Productos";
             this.dataGridView_Productos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DimGray;
-            this.dataGridView_Productos.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.DimGray;
+            this.dataGridView_Productos.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView_Productos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dataGridView_Productos.Size = new System.Drawing.Size(1292, 381);
+            this.dataGridView_Productos.Size = new System.Drawing.Size(892, 326);
             this.dataGridView_Productos.TabIndex = 0;
             this.dataGridView_Productos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TablaProductos_CellContentClickAsync);
             // 
@@ -608,7 +591,7 @@ namespace Sistema_Facturacion.Presentacion
             this.bunifuPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(1650, 50);
+            this.bunifuPanel1.Size = new System.Drawing.Size(895, 50);
             this.bunifuPanel1.TabIndex = 1;
             // 
             // bunifuLabel5
@@ -644,11 +627,22 @@ namespace Sistema_Facturacion.Presentacion
             this.Label_Titulo.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.Label_Titulo.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
+            // Label_Total_Valor
+            // 
+            this.Label_Total_Valor.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.Label_Total_Valor.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Label_Total_Valor.Location = new System.Drawing.Point(118, 16);
+            this.Label_Total_Valor.Name = "Label_Total_Valor";
+            this.Label_Total_Valor.Size = new System.Drawing.Size(266, 50);
+            this.Label_Total_Valor.TabIndex = 7;
+            this.Label_Total_Valor.Text = "$0.00";
+            this.Label_Total_Valor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Frm_Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1650, 1000);
+            this.ClientSize = new System.Drawing.Size(895, 647);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.bunifuPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -683,11 +677,10 @@ namespace Sistema_Facturacion.Presentacion
         private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
+        private Bunifu.UI.WinForms.BunifuLabel Label_Total_Productos;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
         private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel2;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;
@@ -700,5 +693,6 @@ namespace Sistema_Facturacion.Presentacion
         private System.Windows.Forms.DataGridViewImageColumn Eliminar;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton Btn_Buscar_Prod;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton Btn_Actualizar;
+        private System.Windows.Forms.Label Label_Total_Valor;
     }
 }

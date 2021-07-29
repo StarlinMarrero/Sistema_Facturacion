@@ -41,25 +41,25 @@ namespace Sistema_Facturacion.Presentacion
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.bunifuShadowPanel3 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuShadowPanel4 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel9 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuShadowPanel5 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.bunifuLabel10 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel11 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuShadowPanel6 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.bunifuLabel12 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel13 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuShadowPanel7 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.bunifuLabel14 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel15 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.bunifuLabel16 = new Bunifu.UI.WinForms.BunifuLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.bunifuPanel1.SuspendLayout();
@@ -67,14 +67,14 @@ namespace Sistema_Facturacion.Presentacion
             this.bunifuShadowPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.bunifuShadowPanel3.SuspendLayout();
-            this.bunifuShadowPanel4.SuspendLayout();
-            this.bunifuShadowPanel5.SuspendLayout();
-            this.bunifuShadowPanel6.SuspendLayout();
-            this.bunifuShadowPanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.bunifuShadowPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.bunifuShadowPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.bunifuShadowPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.bunifuShadowPanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
@@ -173,7 +173,7 @@ namespace Sistema_Facturacion.Presentacion
             this.bunifuShadowPanel1.ShadowDepth = 5;
             this.bunifuShadowPanel1.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.bunifuShadowPanel1.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel1.Size = new System.Drawing.Size(261, 105);
+            this.bunifuShadowPanel1.Size = new System.Drawing.Size(278, 105);
             this.bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel1.TabIndex = 4;
             // 
@@ -197,7 +197,7 @@ namespace Sistema_Facturacion.Presentacion
             this.bunifuShadowPanel2.ShadowDepth = 5;
             this.bunifuShadowPanel2.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.bunifuShadowPanel2.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel2.Size = new System.Drawing.Size(261, 105);
+            this.bunifuShadowPanel2.Size = new System.Drawing.Size(278, 105);
             this.bunifuShadowPanel2.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel2.TabIndex = 5;
             // 
@@ -211,9 +211,9 @@ namespace Sistema_Facturacion.Presentacion
             this.bunifuLabel4.Location = new System.Drawing.Point(96, 28);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(142, 25);
+            this.bunifuLabel4.Size = new System.Drawing.Size(117, 25);
             this.bunifuLabel4.TabIndex = 1;
-            this.bunifuLabel4.Text = "Alba Luisa Abreu";
+            this.bunifuLabel4.Text = "Bolivar Dicent";
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -229,7 +229,7 @@ namespace Sistema_Facturacion.Presentacion
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel5.Size = new System.Drawing.Size(75, 15);
             this.bunifuLabel5.TabIndex = 3;
-            this.bunifuLabel5.Text = "19-SISN-1-005";
+            this.bunifuLabel5.Text = "16-EISN-1-009";
             this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -263,9 +263,19 @@ namespace Sistema_Facturacion.Presentacion
             this.bunifuShadowPanel3.ShadowDepth = 5;
             this.bunifuShadowPanel3.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.bunifuShadowPanel3.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel3.Size = new System.Drawing.Size(261, 105);
+            this.bunifuShadowPanel3.Size = new System.Drawing.Size(278, 105);
             this.bunifuShadowPanel3.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel3.TabIndex = 6;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Sistema_Facturacion.Properties.Resources.icons8_student_male_96;
+            this.pictureBox3.Location = new System.Drawing.Point(14, 16);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(76, 74);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 4;
+            this.pictureBox3.TabStop = false;
             // 
             // bunifuLabel6
             // 
@@ -277,9 +287,9 @@ namespace Sistema_Facturacion.Presentacion
             this.bunifuLabel6.Location = new System.Drawing.Point(96, 28);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel6.Size = new System.Drawing.Size(142, 25);
+            this.bunifuLabel6.Size = new System.Drawing.Size(115, 25);
             this.bunifuLabel6.TabIndex = 1;
-            this.bunifuLabel6.Text = "Alba Luisa Abreu";
+            this.bunifuLabel6.Text = "Ramsés Pérez";
             this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -295,7 +305,7 @@ namespace Sistema_Facturacion.Presentacion
             this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel7.Size = new System.Drawing.Size(75, 15);
             this.bunifuLabel7.TabIndex = 3;
-            this.bunifuLabel7.Text = "19-SISN-1-005";
+            this.bunifuLabel7.Text = "20-EISN-1-002";
             this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel7.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -319,9 +329,19 @@ namespace Sistema_Facturacion.Presentacion
             this.bunifuShadowPanel4.ShadowDepth = 5;
             this.bunifuShadowPanel4.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.bunifuShadowPanel4.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel4.Size = new System.Drawing.Size(261, 105);
+            this.bunifuShadowPanel4.Size = new System.Drawing.Size(278, 105);
             this.bunifuShadowPanel4.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel4.TabIndex = 9;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Sistema_Facturacion.Properties.Resources.icons8_student_male_96;
+            this.pictureBox4.Location = new System.Drawing.Point(14, 16);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(76, 74);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 5;
+            this.pictureBox4.TabStop = false;
             // 
             // bunifuLabel8
             // 
@@ -333,9 +353,9 @@ namespace Sistema_Facturacion.Presentacion
             this.bunifuLabel8.Location = new System.Drawing.Point(96, 28);
             this.bunifuLabel8.Name = "bunifuLabel8";
             this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel8.Size = new System.Drawing.Size(142, 25);
+            this.bunifuLabel8.Size = new System.Drawing.Size(101, 25);
             this.bunifuLabel8.TabIndex = 1;
-            this.bunifuLabel8.Text = "Alba Luisa Abreu";
+            this.bunifuLabel8.Text = "Yermy Soler";
             this.bunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel8.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -351,7 +371,7 @@ namespace Sistema_Facturacion.Presentacion
             this.bunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel9.Size = new System.Drawing.Size(75, 15);
             this.bunifuLabel9.TabIndex = 3;
-            this.bunifuLabel9.Text = "19-SISN-1-005";
+            this.bunifuLabel9.Text = "19-SISN-1-020";
             this.bunifuLabel9.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel9.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -375,9 +395,19 @@ namespace Sistema_Facturacion.Presentacion
             this.bunifuShadowPanel5.ShadowDepth = 5;
             this.bunifuShadowPanel5.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.bunifuShadowPanel5.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel5.Size = new System.Drawing.Size(261, 105);
+            this.bunifuShadowPanel5.Size = new System.Drawing.Size(278, 105);
             this.bunifuShadowPanel5.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel5.TabIndex = 8;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Sistema_Facturacion.Properties.Resources.icons8_student_male_96;
+            this.pictureBox5.Location = new System.Drawing.Point(14, 16);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(76, 74);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 5;
+            this.pictureBox5.TabStop = false;
             // 
             // bunifuLabel10
             // 
@@ -389,9 +419,9 @@ namespace Sistema_Facturacion.Presentacion
             this.bunifuLabel10.Location = new System.Drawing.Point(96, 28);
             this.bunifuLabel10.Name = "bunifuLabel10";
             this.bunifuLabel10.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel10.Size = new System.Drawing.Size(142, 25);
+            this.bunifuLabel10.Size = new System.Drawing.Size(133, 25);
             this.bunifuLabel10.TabIndex = 1;
-            this.bunifuLabel10.Text = "Alba Luisa Abreu";
+            this.bunifuLabel10.Text = "Victor Gonzalez";
             this.bunifuLabel10.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel10.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -407,7 +437,7 @@ namespace Sistema_Facturacion.Presentacion
             this.bunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel11.Size = new System.Drawing.Size(75, 15);
             this.bunifuLabel11.TabIndex = 3;
-            this.bunifuLabel11.Text = "19-SISN-1-005";
+            this.bunifuLabel11.Text = "20-EISN-1-049";
             this.bunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel11.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -431,9 +461,19 @@ namespace Sistema_Facturacion.Presentacion
             this.bunifuShadowPanel6.ShadowDepth = 5;
             this.bunifuShadowPanel6.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.bunifuShadowPanel6.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel6.Size = new System.Drawing.Size(261, 105);
+            this.bunifuShadowPanel6.Size = new System.Drawing.Size(278, 105);
             this.bunifuShadowPanel6.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel6.TabIndex = 7;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::Sistema_Facturacion.Properties.Resources.icons8_student_male_96;
+            this.pictureBox6.Location = new System.Drawing.Point(14, 16);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(76, 74);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 5;
+            this.pictureBox6.TabStop = false;
             // 
             // bunifuLabel12
             // 
@@ -445,9 +485,9 @@ namespace Sistema_Facturacion.Presentacion
             this.bunifuLabel12.Location = new System.Drawing.Point(96, 28);
             this.bunifuLabel12.Name = "bunifuLabel12";
             this.bunifuLabel12.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel12.Size = new System.Drawing.Size(142, 25);
+            this.bunifuLabel12.Size = new System.Drawing.Size(167, 25);
             this.bunifuLabel12.TabIndex = 1;
-            this.bunifuLabel12.Text = "Alba Luisa Abreu";
+            this.bunifuLabel12.Text = "Juan Carlos Tavarez";
             this.bunifuLabel12.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel12.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -463,7 +503,7 @@ namespace Sistema_Facturacion.Presentacion
             this.bunifuLabel13.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel13.Size = new System.Drawing.Size(75, 15);
             this.bunifuLabel13.TabIndex = 3;
-            this.bunifuLabel13.Text = "19-SISN-1-005";
+            this.bunifuLabel13.Text = "05-EISN-1-100";
             this.bunifuLabel13.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel13.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -487,9 +527,19 @@ namespace Sistema_Facturacion.Presentacion
             this.bunifuShadowPanel7.ShadowDepth = 5;
             this.bunifuShadowPanel7.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.bunifuShadowPanel7.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel7.Size = new System.Drawing.Size(261, 105);
+            this.bunifuShadowPanel7.Size = new System.Drawing.Size(278, 105);
             this.bunifuShadowPanel7.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel7.TabIndex = 9;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::Sistema_Facturacion.Properties.Resources.icons8_student_male_96;
+            this.pictureBox7.Location = new System.Drawing.Point(14, 16);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(76, 74);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 5;
+            this.pictureBox7.TabStop = false;
             // 
             // bunifuLabel14
             // 
@@ -501,9 +551,9 @@ namespace Sistema_Facturacion.Presentacion
             this.bunifuLabel14.Location = new System.Drawing.Point(96, 28);
             this.bunifuLabel14.Name = "bunifuLabel14";
             this.bunifuLabel14.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel14.Size = new System.Drawing.Size(142, 25);
+            this.bunifuLabel14.Size = new System.Drawing.Size(148, 25);
             this.bunifuLabel14.TabIndex = 1;
-            this.bunifuLabel14.Text = "Alba Luisa Abreu";
+            this.bunifuLabel14.Text = "Reimill Rodríguez";
             this.bunifuLabel14.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel14.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -519,64 +569,15 @@ namespace Sistema_Facturacion.Presentacion
             this.bunifuLabel15.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel15.Size = new System.Drawing.Size(75, 15);
             this.bunifuLabel15.TabIndex = 3;
-            this.bunifuLabel15.Text = "19-SISN-1-005";
+            this.bunifuLabel15.Text = "19-SISN-1-035";
             this.bunifuLabel15.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel15.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Sistema_Facturacion.Properties.Resources.icons8_student_male_96;
-            this.pictureBox3.Location = new System.Drawing.Point(14, 16);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(76, 74);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 4;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Sistema_Facturacion.Properties.Resources.icons8_student_male_96;
-            this.pictureBox4.Location = new System.Drawing.Point(14, 16);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(76, 74);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 5;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Sistema_Facturacion.Properties.Resources.icons8_student_male_96;
-            this.pictureBox5.Location = new System.Drawing.Point(14, 16);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(76, 74);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 5;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::Sistema_Facturacion.Properties.Resources.icons8_student_male_96;
-            this.pictureBox6.Location = new System.Drawing.Point(14, 16);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(76, 74);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 5;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::Sistema_Facturacion.Properties.Resources.icons8_student_male_96;
-            this.pictureBox7.Location = new System.Drawing.Point(14, 16);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(76, 74);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 5;
-            this.pictureBox7.TabStop = false;
             // 
             // bunifuLabel16
             // 
             this.bunifuLabel16.AllowParentOverrides = false;
             this.bunifuLabel16.AutoEllipsis = false;
+            this.bunifuLabel16.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel16.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel16.Font = new System.Drawing.Font("Segoe UI", 24F);
             this.bunifuLabel16.Location = new System.Drawing.Point(153, 56);
@@ -615,18 +616,18 @@ namespace Sistema_Facturacion.Presentacion
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.bunifuShadowPanel3.ResumeLayout(false);
             this.bunifuShadowPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.bunifuShadowPanel4.ResumeLayout(false);
             this.bunifuShadowPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.bunifuShadowPanel5.ResumeLayout(false);
             this.bunifuShadowPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.bunifuShadowPanel6.ResumeLayout(false);
             this.bunifuShadowPanel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.bunifuShadowPanel7.ResumeLayout(false);
             this.bunifuShadowPanel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
